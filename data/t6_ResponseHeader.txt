@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Content-Language: en-US
+Server: Microsoft-IIS/7.5
+Server: WebSphere Application Server/7.0
+Persistent-Auth: false
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARuc7KSH97rQYNlbzeFmSBwy8Vz1c5DLMKXZpNO3Ly2ygcjlbfTb2syme+iCRdA7CzxL4uiZtjyRBBEfleZetOTdCNpvqmwJEbDvWxKNLg0Ra5ZvEmQAmt6Utl8UO2YCs8YuXC7ArWTVYRh2c7XFTY=
+Date: Tue, 14 Aug 2018 19:15:47 GMT
+Connection: close
+

@@ -1,0 +1,379 @@
+[API Trapper      (10d4:1744)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\iexplore.exe
+[API Trapper      (17a4:264c)] Recording in 64-bit mode: C:\Program Files\Internet Explorer\IEXPLORE.EXE
+[API Trapper      (1d40:2698)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
+[Network Analyzer (1d40:23c4)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1d40:23c4)] Load Network Traffic Analyzers:
+[Network Analyzer (1d40:23c4)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (1d40:23c4)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (1d40:23c4)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (1d40:23c4)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (1d40:23c4)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (1d40:23c4)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (1d40:23c4)]     Analyzer Module: local_server (value=)
+[Network Analyzer (1d40:23c4)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1d40:1f3c)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Web Request      (1d40:1f3c)] "GET /omni/index.jsp"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 269 bytes (Service=HTTP)
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 1509 bytes  (Service=HTTP)
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  4)  PROXIED!
+[Web Request      (1d40:1f3c)] "GET /omni/index.jsp"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4168 bytes (Service=HTTP)
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 743 bytes  (Service=HTTP)
+[Network Analyzer (1d40:23c4)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 6121 bytes  (Service=HTTP)
+[Network Analyzer (1d40:23c4)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-body-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 357 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-error-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Client -> Server @ : 358 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-link-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Client -> Server @ : 357 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-layer-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Client -> Server @ : 358 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 2873 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Server -> Client : 1289 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 1065 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-layout-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 359 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Server -> Client : 1454 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-menu-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 357 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-print-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 358 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Client -> Server @ : 351 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 1954 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 651 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-scripts.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Client -> Server @ : 368 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 8843 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-deferred-scripts.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Client -> Server @ : 377 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 1105 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-1.9.1.min.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 377 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Server -> Client : 1637 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Server -> Client : 6407 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Client -> Server @ : 370 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-extension-1.9.1.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 383 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui-extension.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 380 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 406 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/dwr/engine.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Client -> Server @ : 4249 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 4229 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 1259 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/dwr/util.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Client -> Server @ : 4247 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Server -> Client : 14429 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Server -> Client : 236 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-session-storage.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 376 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/logo-doc.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 390 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  2) Connection Terminated (by Server)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  4) Connection Terminated (by Server)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/logo-omni.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 391 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 1251 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 14683 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 2923 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 2603 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-minus.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 402 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-plus.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 512 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 520 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1104)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1104)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  7)  PROXIED!
+[Web Request      (1d40:1f3c)] "GET /favicon.ico"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Client -> Server @ : 248 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 1509 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /favicon.ico"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Client -> Server @ : 4147 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Server -> Client : 1707 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-2-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4306 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-3-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4306 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-1-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 4306 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 1893 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-5-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Client -> Server @ : 4306 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 1937 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 1826 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  3) Connection Terminated (by Client)
+[Network Analyzer (1d40:1104)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:17b0)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/css-bg-on.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4299 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Server -> Client : 1981 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/logged-in-bg.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4302 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 1553 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 2957 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/css-bg-off.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 4300 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-left/img-noarrow.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Client -> Server @ : 4302 bytes (Service=HTTP)
+[Network Analyzer (1d40:1104)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 1778 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Server -> Client : 581 bytes  (Service=HTTP)
+[Network Analyzer (1d40:17b0)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Client -> Server @ : 4404 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/HttpRequestAjaxServlet"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Client -> Server @ : 29 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Server -> Client : 494 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  7) Connection Terminated (by Server)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 4372 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/common/docNumberSearch.htm"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 28 bytes (Service=HTTP)
+[Network Analyzer (1d40:1104)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1104)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 655 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/advcor/csPln/offenderCasePlan.htm"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Client -> Server @ : 4309 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 672 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Server -> Client : 11955 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  6) Connection Terminated (by Server)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-body-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4364 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-error-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4366 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 487 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-link-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4365 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-layer-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4366 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-layout-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4367 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-menu-styles.css"   
+[Network Analyzer (1d40: adc)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4365 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/omni/global-print-styles.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4366 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4359 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/calendar/calendar.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4274 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/displaytag.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4267 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/jquery-picklist.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4272 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/collapsible.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4268 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 863 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 1252 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 2406 bytes  (Service=HTTP)
+[Network Analyzer (1d40: adc)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid= 11)  PROXIED!
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-scripts.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4376 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/themes/visjs/vis.css"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4266 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 1050 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-deferred-scripts.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4385 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-extension-1.9.1.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Client -> Server @ : 4391 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 8561 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-1.9.1.min.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4385 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4378 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-ui-extension.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4388 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/dwr/engine.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Client -> Server @ : 4355 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/dwr/util.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4353 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/common-session-storage.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4384 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/collapsible.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4288 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Server -> Client : 236 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 485 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/calendar-en.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Client -> Server @ : 4288 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 3865 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  5) Connection Terminated (by Server)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery-picklist.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4299 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/displaytag.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4287 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/calendar.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4285 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 2480 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 1072 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/jquery/jquery.scrollTo.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4299 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 5072 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 6136 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 3317 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/spellcheck.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4287 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/vis.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Client -> Server @ : 4280 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/dwr/interface/needsGoalsManager.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4294 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 2140 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/scripts/advcor/needsGoals.js"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4294 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/logo-doc.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4398 bytes (Service=HTTP)
+[Network Analyzer (1d40:2048)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 982 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 6095 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/logo-omni.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4399 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-minus.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4410 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-plus.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4409 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:2048)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid= 12)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 5840 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 11278 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 8760 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 8173 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16060 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 981 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 2920 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 13593 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 2920 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 14509 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 4380 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 13546 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/advcor/csPln/offenderCPHeader.htm?persCallback=&persCheckIsDirty=true&inctvCallback=&inctvCheckIsDirty=true&ccOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&waOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&scOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&readOnly=false&isPrint=&nrtvHstryPage="   
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Client -> Server @ : 4673 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 687 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 4635 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/ImageProcessServlet?DOCNUM=888912&IMAGEID=&PHOTOSOURCE=&OVERALLSTATUS=2&PRIMARY=Y"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Client -> Server @ : 4369 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/icons/question.png"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4319 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/icons/wait.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4315 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 951 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 5495 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4365 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4454 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4451 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/dwr/call/plaincall/needsGoalsManager.getCaseManagementFlag.dwr"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 264 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/advcor/csPln/persGoalNrtv.htm"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 38 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/advcor/csPln/inctvNrtv.htm"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 38 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /omni/advcor/cntc/contacts.htm?bannerView=true&editing=false"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4369 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "POST /omni/HttpRequestAjaxServlet"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 12) Client -> Server @ : 4457 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 835 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 12) Server -> Client : 494 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 12) Connection Terminated (by Server)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-2-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4415 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 1868 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 1799 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-3-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4415 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-1-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4415 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:2048)] Address lookup for DOC1ZTUM1168781 = 10.39.45.89
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/bubble-bg-5-line.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4415 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/logged-in-bg.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4411 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-left/img-noarrow.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4411 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 1702 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/css-bg-off.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4409 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:2048)] Request Connection: Remote Server @ 10.37.149.132:80   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 488 bytes  (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/menu-top/css-bg-on.jpg"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Client -> Server @ : 4408 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/icons/red-flag.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Client -> Server @ : 4319 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-plus-gray.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Client -> Server @ : 4329 bytes (Service=HTTP)
+[Web Request      (1d40:1f3c)] "GET /OMNIStatic/images/buttons/button-plus-15pt.gif"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4329 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  1) Server -> Client : 1376 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  9) Server -> Client : 488 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid:  8) Server -> Client : 1477 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 1080 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 579 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Server -> Client : 16083 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 11) Connection Terminated (by Server)
+[Web Request      (1d40:1f3c)] "GET /favicon.ico"   
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Client -> Server @ : 4147 bytes (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Server -> Client : 1707 bytes  (Service=HTTP)
+[Network Analyzer (1d40:1f3c)]   (Sid: 10) Connection Terminated (by Client)

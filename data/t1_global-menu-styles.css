@@ -1,0 +1,156 @@
+<!--
+
+/* 
+
+	Date File Created: November (20) 2006
+	Created By: Paul Cormie
+	Date Last Modified: August (8) 2007
+	Last Modified By: Victor Chong
+	File Summary: CSS classes used throughout the entire web application for Menus on left hand side
+	CSS Contents: Menus
+	Tested: IE 5.5, IE 6.0, FireFox 2.0
+
+*/
+
+li {
+	/* lists aligned to the left */
+	float: bottom;
+}
+
+ul.cls-menu-left {
+	position:relative;
+	top:-10px;
+	left:-40px;
+	list-style-type: none; /* suppression of useless elements */
+	padding-bottom:0px;
+	width: 100%; /* precision for Opera */
+}
+
+li.cls-menu-left {
+	width: 170px; 
+	margin: 0px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+	color: #000000;
+	background: #ededcf;
+	padding-left:3px;
+	padding-right:3px;
+	padding-bottom:4px;
+	padding-top:4px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	background-image:url('../../images/menu-left/img-noarrow.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.cls-menu-left-header {
+	width: 169px; 
+	margin: 0px;
+	color: #000000;
+	background-color: #cccc99;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:10pt;  /*change to small to allow scaling*/
+	font-weight:bold;
+	padding-left:5px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom: 1px solid #666666;
+}
+
+.cls-menu-left-header-inactive {
+	width: 170px; 
+	margin: 0px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+	color: #000000;
+	background: #ededcf;
+	padding-left:5px;
+	padding-right:3px;
+	padding-bottom:4px;
+	padding-top:4px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	background-image:url('../../images/menu-left/img-noarrow.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.cls-menu-left-selected {
+	width: 170px; 
+	margin: 0px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+	color: #000000;
+	background: #cccc99;
+	padding-left:5px;
+	padding-right:3px;
+	padding-bottom:4px;
+	padding-top:4px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	background-image:url('../../images/menu-left/img-arrow.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.cls-menu-left-inactive {
+	width: 170px; 
+	margin: 0px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+	color: #000000;
+	padding-left:2px;
+	padding-right:3px;
+	padding-bottom:2px;
+	padding-top:0px;
+}
+
+.cls-menu-left a {
+	width: 170px; 
+	margin: 0px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+	color: #000000;
+	background: #ededcf;
+	padding-left:5px;
+	padding-right:3px;
+	padding-bottom:4px;
+	padding-top:4px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	background-image:url('../../images/menu-left/img-noarrow.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.cls-menu-left a:hover {
+	background: #cccc99;
+	background-image:url('../../images/menu-left/img-arrow.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.cls-menu-left a:active {
+	background: #9d9d4f;
+	color: #ffffff;
+	background-image:url('../../images/menu-left/img-arrow-onclick.gif');
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+-->

@@ -1,0 +1,8 @@
+[parameter:ServerName]
+CurrentValue="omniconv"
+IsEncrypt="NO"
+IsServer="YES"
+OriginalValue="omniconv"
+ParamName="ServerName"
+Prompt=""
+Type="Custom"

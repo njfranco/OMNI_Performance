@@ -1,0 +1,442 @@
+<!--
+
+/* 
+
+	Date File Created: November (20) 2006
+	Created By: Paul Cormie
+	Date Last Modified: February (23) 2007
+	Last Modified By: Victor Chong
+	File Summary: CSS classes used to specify the formatting of page into header and two columns (menu / content area)
+	CSS Contents: Layout Related Classes / Layers
+	Tested: IE 5.5, IE 6.0, FireFox 2.0
+
+
+id-main-header sub layer definition
+-----------------------------------------
+|	a1	|	a2		|	a3	|
+-----------------------------------------
+|	b1			|	b2	|
+-----------------------------------------
+|		c1			|
+-----------------------------------------
+|	d1		|	d2	|
+-----------------------------------------
+
+
+*/
+
+html, body {
+	border: 0px;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+#id-body-popup {
+	background-color: #ededcf;
+	border: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+#id-main-header {
+	background-color: transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	/* IE 5.5 */
+	height: 81px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	/* IE 6 */
+	height: 99px;
+	}
+	html>body #id-main-header {
+	/* these affect Mozilla and Safari */ 
+	height: 99px;
+}
+
+#id-main-header-a-1 {
+	background-color: transparent;
+	position: absolute;
+	left: 5px;
+	top: 0px;
+	padding-left: 0px;
+	width: 165px;
+	height: 45px;
+	}
+	html>body #id-main-header-a-2 {
+	height: 45px;
+}
+
+#id-main-header-a-2 {
+	background-color: transparent;
+	margin-left: 165px;
+	margin-right: 190px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 165px;
+	margin-right: 190px;
+	text-align: center;
+	height: 45px;
+	}
+	html>body #id-main-header-a-2 {
+	margin-left: 165px;
+	margin-right: 208px;
+	height: 45px;
+}	
+
+#id-main-header-a-3 {
+	background-color: transparent;
+	position: absolute;
+	padding-top: 5px;
+	right: 5px;
+	top: 0px;
+	width: 190px;
+	height: 50px;
+	text-align: right;
+	}
+	html>body #id-main-header-a-3 {
+	width: 207px;
+	height: 50px;
+	padding-top: 5px;
+	right: 3px;
+}
+
+#id-main-header-b-1 {
+	background-color: transparent;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 0px;
+	margin-right: 350px;
+	text-align: left;
+	padding-top: 2px;
+	height: 17px;
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 4pt;
+	color: #666666;
+	white-space: nowrap;
+	}
+	html>body #id-main-header-b-1 {
+	margin-left: 0px;
+	margin-right: 350px;
+	height: 17px;
+	white-space: nowrap;
+}
+
+#id-main-header-b-2 {
+	background-color: transparent;
+/*	position: absolute;*/
+/*	padding-top: 5px;*/
+	right: 5px;
+	top: 32px;
+	width: 100%;/*350px;*/
+	height: 15px;/*25px;*/
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 7pt;
+	color: #666666;
+	}
+	html>body #id-main-header-b-2 {
+	width: 100%;/*350px;*/
+	/*top: 35px;*/
+}
+
+#id-main-header-c-1 {
+	background-color: #cccc99;
+	margin-left: 0px;
+	margin-right: 0px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: left;
+	height: 4px;
+	border-bottom: 1px solid #666666;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 2pt;
+	color: #666666;
+	}
+	html>body #id-main-header-c-1 {
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 4px;
+}
+
+#id-main-header-d-1 {
+	background-color: transparent;
+	margin-left: 165px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 0px;
+	text-align: left;
+	height: 30px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	font-weight: normal;
+	padding-top: 3px;
+}
+html>body #id-main-header-d-1 {
+	margin-left: 0px;
+	height: 33px;
+}
+
+#id-main-header-d-2 {
+	background-color: transparent;
+	position: absolute;
+	right: 5px;
+	top: 69px;
+	height: 30px;
+	text-align: right;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: #e1e1e1;
+}
+html>body #id-main-header-d-2 {
+	line-height: 1.6;
+	margin-top:12px;
+}
+
+/* left side menu */
+#id-main-left {
+					background-color: transparent;
+					position: absolute;
+					left: 0px;
+					top: 110px;
+					width: 180px;
+					padding: 0px 5px;
+					}
+					html>body #id-main-left {
+					/* these affect Mozilla and Safari */ 
+					position: absolute;
+					left: 0px;
+					top: 94px;
+					width: 180px;
+					padding: 0px 5px;
+}
+
+#id-main-left-fors {
+					background-color: transparent;
+					position: absolute;
+					left: 0px;
+					top: 78px;
+					width: 180px;
+					padding: 0px 5px;
+					}
+					html>body #id-main-left {
+					/* these affect Mozilla and Safari */ 
+					position: absolute;
+					left: 0px;
+					top: 94px;
+					width: 180px;
+					padding: 0px 5px;
+}
+
+#id-below-main-left {
+					background-color: transparent;
+					position: absolute;
+					left: 0px;
+					top: 350px;
+					width: 175px;
+					padding: 0px 0px;
+					margin-right: 0px;
+					padding-left: 2px;
+					padding-bottom: 4px;
+					padding-top: 4px;
+					}
+					html>body #id-below-main-left {
+					/* these affect Mozilla and Safari */ 
+					position: absolute;
+					left: 0px;
+					top: 334px;
+					width: 175px;
+					padding-left: 2px;
+					padding-bottom: 4px;
+					padding-top: 4px;
+					
+}
+
+/* left side content area */
+#id-main-right {
+					background-color: transparent;
+					position: relative;
+					top: -2px;
+					left: 0px;
+					/* these two margins affect IE 5.5 */ 
+					margin-left: 190px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					/* these two margins affect IE 6 */ 
+					margin-left: 190px;
+					margin-right: 5px; 
+					}
+					html>body #id-main-right {
+					/* these affect Mozilla and Safari */ 
+					position: relative;
+					top: 1px;
+					left: 0px;
+					margin-left: 190px;
+					margin-right: 5px;
+}
+
+/* left side menu */
+#id-main-right-header, .main-right-header {
+					background-color: #cccc99;
+					color: #000000;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 10pt;  /*change to small to allow scaling*/
+					font-weight: bold;
+					padding-left: 8px;
+					padding-bottom: 4px;
+					padding-top: 4px;
+					border-bottom: 1px solid #666666;
+					/* these two margins affect IE 5.5 */
+					margin-right: 0px;
+					top: 95px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					/* these two margins affect IE 6 */
+					margin-right: 0px;
+}
+
+#id-main-contents-infobox 	{
+					background-color: #ffffcc;
+					color: #000000;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 10pt;  /*change to small to allow scaling*/
+					font-weight: bold;
+					padding-left: 8px;
+					padding-bottom: 4px;
+					padding-top: 4px;
+					border-bottom: 1px solid #666666;
+					/* these two margins affect IE 5.5 */
+					margin-right: 0px;
+					top: 95px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					/* these two margins affect IE 6 */
+					margin-right: 0px; 
+		
+}
+
+#id-main-contents-subtitle 	{
+					background-color: #cac8bb;
+					color: #000000;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 10pt;  /*change to small to allow scaling*/
+					font-weight: bold;
+					padding-left: 8px;
+					padding-bottom: 4px;
+					padding-top: 4px;
+					
+					/* these two margins affect IE 5.5 */
+					margin-right: 0px;
+					top: 95px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					/* these two margins affect IE 6 */
+					margin-right: 0px; 
+		
+}
+
+
+#id-main-right-header-sub, .main-right-header-sub {
+					background-color: #d8d8af;
+					color: #000000;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 8pt;  /*change to x-small to allow scaling*/
+					font-weight: bold;
+					padding-left: 5px;
+					padding-right: 5px;
+					padding-bottom: 0px;
+					padding-top: 4px;
+					line-height: 150%;
+					padding-bottom: 5px;
+}
+
+
+/* main content area (used when no need for left menu area)*/
+#id-main {
+					background-color: transparent;
+					position: absolute;
+					left: 0px;
+					top: 100px;
+					padding: 0px 5px;
+					}
+					html>body #id-main {
+					/* these affect Mozilla and Safari */ 
+					position: absolute;
+					left: 0px;
+					top: 94px;
+					margin-right: 5px; 
+					padding: 0px 5px;
+}
+
+#id-main-print {
+
+					background-color: transparent;
+					position: relative;
+					/* top: -2px; */
+					left: 0px;
+					/* these two margins affect IE 5.5 */ 
+					margin-left: 5px;
+					voice-family: "\"}\"";
+					voice-family: inherit;
+					/* these two margins affect IE 6 */ 
+					margin-left: 0px;
+					margin-right: 5px; 
+					}
+					html>body #id-main-print            {
+					/* these affect Mozilla and Safari */ 
+					position: relative;
+					top: 1px;
+					left: 0px;
+					margin-left: 0px;
+					margin-right: 5px;
+}
+
+
+
+.dead-Small
+{
+	font-family:Times New Roman;
+	font-weight:bold; 
+	font-size:8px; 
+	color:Red;
+    margin-left: 5px;
+	margin-top:-15px;
+}
+
+.dead-Normal
+{
+	font-family:Times New Roman;
+	font-weight:bold; 
+	font-size:34px; 
+	text-align:center; 
+	color:Red; 
+	margin-top:-65px;
+}
+
+#single-Photo-Dead
+{
+	font-family:Times New Roman;
+	font-weight:bold; 
+	font-size:30px; 
+	color:Red; 
+    margin-left:15px; 
+	margin-top:-40px;	
+}
+
+#medium-Photo-Dead, .dead-Medium {
+    color: Red;
+    font-family: Times New Roman;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 2px;
+    position: absolute;
+    top: 180px;
+}
+-->

@@ -1,0 +1,611 @@
+
+
+
+
+
+
+
+
+
+
+<!-- Offender Header, Inmate: BEGIN -->
+
+	<script language="javascript" type="text/javascript">
+	//<![CDATA[
+		function showPopup(dialogURL, width, height) {
+			if (width == undefined) width='550';
+			if (height == undefined) height='600';
+			var ret = openPopUpReturnWindow(dialogURL, "viewWindow", "width="+width+"px,height="+height+"px,status=0,resizable=yes,scrollbars=yes");
+		}
+	//]]>
+	</script>
+	
+		
+	
+	
+		
+		
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<!-- TAG Start -->
+
+	<script type="text/javascript">
+	//<![CDATA[
+		function stopProp(event) {
+			if (event.stopPropagation) {			
+				event.stopPropagation();
+			} else {
+				// IE8 fix
+				event.returnValue = false;
+				event.cancelBubble = true;
+			}			
+		}
+		function toggleExpanderIcon(imgId) {
+			// swap the plus/minus icon correctly for the section after the section has been toggled (expanded/collapsed)
+			var imgObj = document.getElementById(imgId);
+			if (imgObj != null && imgObj.src != null) {
+				var imgSrc = imgObj.src;
+				if (imgSrc.indexOf("plus") >= 0 ){
+					imgSrc = imgSrc.replace("plus","minus");
+					imgObj.src = imgSrc;
+				}
+				else if (imgSrc.indexOf("minus") >= 0 ){
+					imgSrc = imgSrc.replace("minus","plus");
+					imgObj.src = imgSrc;
+				}
+			}
+			return false;
+		}
+	//]]>
+	</script>
+
+	<div onclick="$('#ocph_offenderCPHeader').slideToggle('fast');return toggleExpanderIcon('ocph_offenderCPHeader_ContractCtrl');">
+		<table style="width:100%;" cellpadding="0" cellspacing="0" class="main-right-header-overview-expanded">
+			<tr>
+				<td style="white-space:nowrap;width:70%;" valign="middle" >
+					Inmate: TABLER, Patrick Roy (888912)
+				</td>
+				<td style="text-align:right;white-space:nowrap;width:15%;padding-right:5px;" >
+					ERD: 03/29/2020
+				</td>
+				<td style="text-align:right;white-space:nowrap;width:15%;padding-right:5px;" >
+					Contact RLC: HD
+				</td>
+				<td style="white-space:nowrap;width:24px;" class="cls-expand-collapse-button" align="right" valign="top">
+					<img id="ocph_offenderCPHeader_ContractCtrl" src="/OMNIStatic/images/buttons/button-minus.gif" height="15" alt="Collapse or expand this section" style="border:0px;" />
+				</td>
+			</tr>
+			<tr id = "dontPrintHeader2">
+				<td style="white-space:nowrap;" valign="middle" >
+					&nbsp;
+				</td>
+				<td style="text-align:right;white-space:nowrap;padding-right:5px;" colspan="2" >
+					<!-- SecurityConstants.INTERFACES_OFFENDER_PHOTO -->
+					<!-- CQ33683 - added a parameter for print screens using the header so it can disable all hyperlinks -->
+					
+						
+							<a onclick="stopProp(event); showPopup('/omni/advcor/needs/printOptions.htm', 650, 675);" class="cls-link" style="font-size:8pt">Print Case Plan</a>
+							<span style="font-weight:normal;">|</span>
+						
+						
+							<a href="javascript:openPopUpWindowWithFeatures('/omni/offenderphoto/viewAllOffenderPhotos.htm?overAllStatus=2', 'OffenderPhotoPopup', 'toolbar=0,location=0,directories=0,status=1,menubar=1,scrollbars=1,resizable=yes,width=600,height=400')" onclick="stopProp(event);" class="cls-link" style="font-size:8pt">
+								View All Photos
+							</a>
+							<span style="font-weight:normal;">|</span>
+						
+						<!-- SecurityConstants.LEGAL_FACE_SHEET -->
+						
+							<a href="/omni/records/lfs/index.htm?offenderDOCNo=888912" onclick="stopProp(event);return processOmniLinkClick(this);" class="cls-link" style="font-size:8pt">
+								Legal Face Sheet
+							</a>
+						
+					
+				</td>
+				<td style="white-space:nowrap;width:24px;" class="cls-expand-collapse-button" align="right" valign="top" >
+					&nbsp;
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<!-- TAG End -->
+
+
+	<div id="ocph_offenderCPHeader" style="width:100%">
+		<div class="main-contents">
+			<fieldset>
+				<table width="100%" cellpadding="0" cellspacing="2">
+					<tr>
+						<td align="left" width="124px" >
+							<img src="/omni/ImageProcessServlet?DOCNUM=888912&amp;IMAGEID=&amp;PHOTOSOURCE=&amp;OVERALLSTATUS=2&amp;PRIMARY=Y" alt="photo loading..." border="0" style="width:124px;height:155px" />  
+							
+						</td>
+						<td>
+							<table width="100%" cellpadding="0" cellspacing="2">
+								<tr>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">DOB:</span>
+										<span class="cls-value">12/08/1986</span>
+									</td>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">Comm Concerns:</span>
+										
+											
+											
+												<span class="cls-value">No</span>
+											
+										
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">SO Risk Category:</span>
+										<span class="cls-value"></span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">Custody Level:</span>
+										<span class="cls-value">Minimum 2 - Camp</span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Body Status:
+</span>
+										<span class="cls-value">Active Inmate&nbsp;</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">Age:</span>
+										<span class="cls-value">31</span>
+									</td>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">Wrap Around:</span>
+										
+										
+											<span class="cls-value">No</span>
+										
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">PREA:</span>
+										<span class="cls-value">No Risk Identified</span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">Category:</span>
+										<span class="cls-value">Regular Inmate</span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">Location:</span>
+										<span id="headerLocation" class="cls-value">
+											AHCC-MSU
+											&mdash;
+											
+												
+												
+													SIE
+													/
+													4D111
+												
+											
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">Gender:</span>
+										<span class="cls-value">Male   </span>
+									</td>
+									<td style="height:40px;" valign="top">
+										<span class="cls-label">Safety Concerns:</span>
+										
+										<!-- CQ 33828 -->
+										
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">ESR SO Lvl:</span>
+										<span class="cls-value">
+											
+											
+										</span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">Single Cell Required:</span>
+										<span class="cls-value">
+											
+												No
+											
+											&nbsp;
+										</span>
+									</td>
+									<td style="white-space:normal;height:40px;" valign="top">
+										<span class="cls-label">CC/CCO:</span>
+										<span class="cls-value">
+											
+											
+											
+												
+													
+													
+														<a href='/omni/records/staff/staffModify.htm?staffId=1511687' onclick="return checkFormChanged();" title="author_link">Healey, Merina J</a>
+													
+													&nbsp;<br />
+												
+											
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<!-- CQ32521 -->
+									
+									<td valign="top">
+										
+								 	</td>
+						
+								
+									<td valign="top">
+										<span class="cls-label">STG Info:</span>
+										
+										
+										
+											<span class="cls-value">No</span>
+										
+									</td>
+									<td valign="top">
+										&nbsp;
+									</td>
+									<td valign="top" >
+										<span class="cls-label">Admission Date:</span>
+										<span class="cls-value">
+											
+												05/09/2012
+											
+										</span>
+									</td>
+									<td  valign="top">
+									 
+									 </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="2">
+					<tr>
+						<td width="12%" class="cls-label" valign="top">
+							<fieldset>
+								 <table cellpadding="1" cellspacing="1" border="0" width="100%">
+									<tr>
+										<td class="cls-label">P</td>
+										<td class="cls-label">U</td>
+										<td class="cls-label">L</td>
+										<td class="cls-label">H</td>
+										<td class="cls-label">E</td>
+										<td class="cls-label">S</td>
+										<td class="cls-label">D</td>
+										<td class="cls-label">X</td>
+										<td class="cls-label">T</td>
+										<!-- CQ 35468 -->
+										<td class="cls-label">R</td>
+										<td rowspan="2" style="padding-left:2px;">
+											
+												
+												
+													<span><a href="javascript:void(0);" class="cls-link-help" onclick="showPopup('http://helpsitesdemo/OMNI/Content/Advance Corrections/om3001.htm'); return false;">
+															<img src="/OMNIStatic/images/icons/question.png" alt="Help" style="border:0px;" /></a>
+													</span>
+												
+											
+										</td>
+									</tr>
+									<tr class="cls-value">
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>2</td>
+										<td>1</td>
+										<td>1</td>
+										<!--  CQ 35468 -->
+										<td>0</td>
+									</tr>
+								</table>
+							</fieldset>
+						</td>
+						<td valign="top">
+							<fieldset>
+								
+								
+								
+									
+									
+									
+									
+									
+										
+											
+												<div>
+													<h3 class="main-right-header" style="margin:0px;">Supervision:&nbsp;&nbsp;<b>Yes</b></h3>
+												</div>
+												<div>
+													<table width="100%" cellpadding="0" cellspacing="2">
+														<tr>
+											
+											
+											
+											
+											
+											
+												
+											
+											
+															<td>
+																<span class="cls-value">AB-101018943-CCP</span>
+															</td>
+											
+										
+									
+										
+									
+									
+								
+								
+									
+														<td align="right" width="4%">
+															
+																
+																
+																	<span><a href="javascript:void(0);" class="cls-link-help" onclick="showPopup('http://helpsitesdemo/OMNI/Content/Advance Corrections/om3000.htm'); return false;">
+																			<img src="/OMNIStatic/images/icons/question.png" alt="Help" style="border:0px;" /></a>
+																	</span>
+																
+															
+														</td>
+									
+													</tr>
+								
+								
+												</table>
+											</div>
+								
+								
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+ 				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding: 2px;">
+	<fieldset id="hdr_persGoalNrtv">
+		<div class="main-right-header">
+			Offender Personal Goal Narrative:
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+<a href="/omni/advcor/csPln/persGoalNrtvHstry.htm" class="cls-link disabled" onclick="if (hasDisabledClass(this)) return false; return checkFormChanged();">View All</a>
+
+		</div>
+		<div class="main-contents">
+			<img src="/OMNIStatic/images/icons/wait.gif" style="vertical-align: middle;" title="Loading..."  height="13" width="13" alt="Loading..."/>
+		</div>
+	</fieldset>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function($) {	
+		$('#hdr_persGoalNrtv').on('refresh', function(){	
+			$(this).load('/omni/advcor/csPln/persGoalNrtv.htm', {readOnly: 'false', isPrint: '', nrtvHstryPage:'' }, function( response, status, xhr ) {
+				 if ( status == "error" ) {
+					 $(this).html( response );
+				}
+			});
+		});
+		$('#hdr_persGoalNrtv').trigger('refresh');
+		
+	});
+	
+	// Function called by submit actions within the #hdr_persGoalNrtv block.
+	var opgn_submitting = false;
+	function opgn_Submit(action, prsgoaId, prsgnrId) {
+		// short-circuit to prevent double clicking of buttons or links
+		if (opgn_submitting) return false;
+		opgn_submitting = true;
+		
+		
+		if (action !== 'save' && action !== 'cancel' && !checkFormChanged()) {
+			opgn_submitting = false;
+			return false;
+		}
+		
+
+		if (action === 'delNrtv' && !window.confirm("WARNING. This record will be deleted. Do you want to continue?")) {
+			opgn_submitting = false;
+			return false;
+		}
+		
+		// disable buttons.
+		$("#hdr_persGoalNrtv form input[type='button']").attr('disabled', 'disabled');
+		
+		var form = $("#hdr_persGoalNrtv form");
+		$('#opgn_submitAction').val(action);
+		if (action !== 'save') {
+			$('#opgn_goalId').val(prsgoaId);
+			$('#opgn_nrtvId').val(prsgnrId);
+		}
+		$.post(form[0].action, form.serialize(), function(html) {
+			$("#hdr_persGoalNrtv").empty().append(html);				
+			$("#hdr_persGoalNrtv form").enableIsDirtyListeners();
+			$("#opgn_nrtvTx").focus();
+			$("#hdr_persGoalNrtv").trigger('callback');
+			opgn_submitting = false;
+		});
+	}
+	//]]>
+	</script>
+</div>
+
+ 				
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding: 2px;">
+	<fieldset id="hdr_inctvNrtv">
+		<div class="main-right-header">
+			Incentives Narrative:
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+<a href="/omni/advcor/csPln/inctvNrtvHstry.htm" class="cls-link disabled" onclick="if (hasDisabledClass(this)) return false; return checkFormChanged();">View All</a>
+
+		</div>
+		<div class="main-contents">
+			<img src="/OMNIStatic/images/icons/wait.gif" style="vertical-align: middle;" title="Loading..."  height="13" width="13" alt="Loading..."/>
+		</div>
+	</fieldset>
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function($) {	
+		$('#hdr_inctvNrtv').on('refresh', function(){	
+			$(this).load('/omni/advcor/csPln/inctvNrtv.htm', {readOnly: 'false', isPrint: '', nrtvHstryPage:''}, function( response, status, xhr ) {
+				 if ( status == "error" ) {
+					 $(this).html( response );
+				}
+			});
+		});
+		$('#hdr_inctvNrtv').trigger('refresh');
+		
+	});
+	
+	// Function called by submit actions within the #hdr_inctvNrtv block.
+	var oin_submitting = false;
+	function oin_Submit(action, prsincId, prsinrId) {
+		// short-circuit to prevent double clicking of buttons or links
+		if (oin_submitting) return false;
+		oin_submitting = true;
+		
+		
+		if (action !== 'save' && action !== 'cancel' && !checkFormChanged()) {
+			oin_submitting = false;
+			return false;
+		}
+		
+
+		if (action === 'delNrtv' && !window.confirm("WARNING. This record will be deleted. Do you want to continue?")) {
+			oin_submitting = false;
+			return false;
+		}
+
+		// disable buttons.
+		$("#hdr_inctvNrtv form input[type='button']").attr('disabled', 'disabled');
+		
+		var form = $("#hdr_inctvNrtv form");
+		$('#oin_submitAction').val(action);
+		if (action !== 'save') {
+			$('#oin_inctvId').val(prsincId);
+			$('#oin_nrtvId').val(prsinrId);
+		}
+		$.post(form[0].action, form.serialize(), function(html) {
+			$("#hdr_inctvNrtv").empty().append(html);				
+			$("#hdr_inctvNrtv form").enableIsDirtyListeners();
+			$("#oin_nrtvTx").focus();
+			$("#hdr_inctvNrtv").trigger('callback');
+			oin_submitting = false;
+		});
+	}
+	//]]>
+	</script>
+</div>
+
+			</fieldset>
+		</div>
+	</div>
+
+<!-- Offender Header, Inmate: END -->
+
+

@@ -1,0 +1,143 @@
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+function addContactType(type, e) {
+	// don't bubble up to header click event
+   	e.stopPropagation();
+
+	$("#cn_section .collapsible-header").data('mode','add'+type);
+	
+	$("#cn_section .collapsible-header").trigger('header:expand');
+	
+	$("#cn_section .collapsible-header").data('mode','');
+	
+
+	$('#cntcPrdRsltsSpan').trigger('refresh');
+	
+	return false;
+	
+}
+
+function addContactOverride(e) {
+	// don't bubble up to header click event
+   	e.stopPropagation();
+   	
+   	 
+   	 
+   	$("#sa_section .collapsible-header").trigger('header:expand', function(){ 
+   		$("#sa_co_section .collapsible-header").data('mode','add');
+        $("#sa_co_section .collapsible-header").trigger('header:expand'); 
+        $("#sa_co_section .collapsible-header").data('mode','');
+})
+
+	
+	
+
+	$('#cntcPrdRsltsSpan').trigger('refresh');
+	
+	return false;
+	
+}
+
+
+//]]>
+</script>
+
+<div style="float: left; align:left; width: 100%; color: black;">
+	
+	<table cellspacing="0px" cellpadding="0px" style="border-spacing: 0px 0px;">
+		<tr>
+			
+				<td>
+					<table cellspacing="0px" cellpadding="0px" style="border-spacing: 0px 0px;">
+						<tr>
+							<td>
+								<div>&nbsp;</div>
+								<div style="align:center; text-align:center; font-weight: bold;">
+									
+										
+										
+											
+											
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+<a class="cls-link" onclick="if (hasDisabledClass(this)) return false; return addContactType(1, event);">Office</a>
+
+										
+										
+									
+								</div>
+							</td>
+							<td>
+								<table cellspacing="0px" cellpadding="0px" style="border-spacing: 0px 0px;">
+									<tr>
+										<td>
+											<div style="align:center; text-align:center;">
+												
+													<input type="checkbox" name="Office_cntcPrdChk_1"  checked="true"  disabled="disabled">
+												
+											</div>
+										</td>
+										
+									</tr>
+									<tr>
+										<td>
+											<div style="align:center; text-align:center;">
+												
+													Semi-annually
+												
+												
+												
+													
+													
+													
+													
+													
+														(Apr-Sep)
+													
+													
+												
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				
+			
+		</tr>
+	</table>
+</div>
+<div>
+
+
+<div style=" align: right; text-align: right;  color: black;">
+	<span style="font-weight: bold; color: black;">Start Date:</span> 10/31/2017
+	
+	
+	
+	
+</div>
+
+</div>

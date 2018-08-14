@@ -1,0 +1,1984 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+	<!-- Header portion: BEGIN -->
+	<head>
+
+		<!-- Set the meta parameters for this page -->
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+		<!-- Include common JSP files for OMNI -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+				<!-- Global body style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-body-styles.css" />
+
+		<!-- Global error style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-error-styles.css" />
+
+		<!-- Global hyperlink style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-link-styles.css" />
+
+		<!-- Global layer style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-layer-styles.css" />
+
+		<!-- Global layout declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-layout-styles.css" />
+
+		<!-- Global menu style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-menu-styles.css" />
+
+		<!-- Global print style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-print-styles.css" media="print" />
+
+	
+		<!-- Common scripts used in OMNI -->
+		<script type="text/javascript" src="/OMNIStatic/scripts/common-scripts.js"></script>
+
+		<!-- Common deferred scripts used in OMNI -->
+        <script type="text/javascript" defer="defer" src="/OMNIStatic/scripts/common-deferred-scripts.js"></script>
+        
+        <!-- Common jquery scripts used in OMNI -->
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-extension-1.9.1.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-ui.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-ui-extension.js"></script>
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/scripts/jquery/jquery-ui.css" />
+
+        <!-- dwr scripts used in OMNI -->
+        <script type="text/javascript" src="/omni/dwr/engine.js"></script>
+		<script type="text/javascript" src="/omni/dwr/util.js"></script>    
+		
+        <!-- Common session storage scripts used in OMNI -->
+        <script type="text/javascript" src="/OMNIStatic/scripts/common-session-storage.js"></script>
+        
+
+
+
+
+
+
+		<!-- $layername is set to "id-main-right" by default: override if neccessary -->
+		
+
+		<!-- Page-specific head content: BEGIN -->
+		
+		
+		
+		<!-- Define the title for this page -->
+		<title>OMNI: Offender Case Plan</title>
+		
+		
+		
+		
+
+		<!-- Include any global elements -->
+		
+
+		<!-- Specify scripts used in this page -->
+		
+		
+<!-- Header / Calendar (JavaScript): BEGIN -->
+<link rel="stylesheet" href="/OMNIStatic/themes/calendar/calendar.css"  type="text/css" />
+<script type="text/javascript" src="/OMNIStatic/scripts/calendar.js"></script>
+<script type="text/javascript" src="/OMNIStatic/scripts/calendar-en.js"></script>
+<!-- Header / Calendar (JavaScript): END -->
+
+		<!-- Header / Collapsible (JavaScript): BEGIN -->
+<link rel="stylesheet" href="/OMNIStatic/themes/collapsible.css"  type="text/css" />
+<script type="text/javascript" src="/OMNIStatic/scripts/collapsible.js"></script>
+<!-- Header / Collapsible (JavaScript): END -->
+
+		<!-- Header / DisplayTag (JavaScript): BEGIN -->
+<link rel="stylesheet" href="/OMNIStatic/themes/displaytag.css"  type="text/css" />
+<script type="text/javascript" src="/OMNIStatic/scripts/displaytag.js"></script>
+<!-- Header / DisplayTag (JavaScript): END -->
+
+		<link type="text/css" href="/OMNIStatic/themes/jquery-picklist.css" rel="stylesheet" />
+<script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-picklist.js"></script>
+<script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery.scrollTo.js"></script>
+
+		<link rel="stylesheet" href="/OMNIStatic/themes/visjs/vis.css"  type="text/css" />
+<script type="text/javascript" src="/OMNIStatic/scripts/vis.js"></script>
+		<script type="text/javascript" src="/OMNIStatic/scripts/spellcheck.js"></script>		
+		<script type='text/javascript' src='/omni/dwr/interface/needsGoalsManager.js'></script>	
+		<script type="text/javascript" src="/OMNIStatic/scripts/advcor/needsGoals.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+
+		// A global variable to track which section/subsection was last expanded or whose content was clicked on.
+		//   This is a | separated list of targets where subsequent elements are references inside sections and subsections
+		var lastAccessed;
+		var window_location_hash = '';
+		
+		// Similiar to init(), except that this ready function is called *before* the page is rendered.
+		$(document).ready(function($) {		
+
+			// should never focus here.  Only focus if we aren't coming here from another page (there isn't hashes in the url)
+			//document.getElementById('doc_no').focus();//CQ32306
+			//document.getElementById('doc_no').select();//CQ32306
+							
+			// Register click events to the Collapse All links
+			$('a.collapseAll').addClass('cls-link').click(function(e) {
+				if (!$(this).hasClass('disabled')) {
+					$('.collapsible .collapsible-header').each(function() {
+						$(this).trigger('header:collapse');
+					});
+					$('html,body').animate({ scrollTop : 0 });
+				}
+			});
+		
+			// Register an event handler to trigger when *all* ajax requests have been processed.
+			//   Scroll to the section of interest when the page finishes loading. 
+			if (window.location.hash === '#_') window.location.hash = '';
+			window_location_hash = window.location.hash;
+			if (window_location_hash !== '') {
+				window_location_hash = window_location_hash.replace('#', '');
+			}
+			else {
+				document.getElementById('doc_no').focus();//CQ32306
+				document.getElementById('doc_no').select();//CQ32306
+			}
+			// After loading the offender header, load the first section referenced in the hash (if existing)
+			$(document).ajaxStop(function() {	
+				loadNextHashSection();
+				
+				// deregister this event (we only want it to fire on initial rendering)
+				$(document).off('ajaxStop');
+				$("#mainCasePlanSection").show();
+			});
+			
+			// If there are no active ajax requests, show the main Case Plan section
+			if ($.active == 0) {
+				$("#mainCasePlanSection").show();
+			}
+				
+			$(document).ready(function($) {    
+       			$('#cntcPrdRsltsSpan').on('refresh', function() {       
+              		var editingCntc = false;
+	              	if(document.getElementById('editingCntc')) {
+	                	editingCntc = document.getElementById('editingCntc').value;
+	              	}
+              		$(this).load('/omni/advcor/cntc/contacts.htm?bannerView=true&editing='+editingCntc, function( response, status, xhr ) {
+                    	$(this).html( response );
+              		});
+       			});
+       			$('#cntcPrdRsltsSpan').trigger('refresh');
+				});
+			// Add a refresh trigger for the Case Management flag that can be called at will.
+       		$("#cm_section .flag:first").on('refresh', function() {
+              var span = $(this);
+              needsGoalsManager.getCaseManagementFlag("888912", {
+                     callback: function(flag) {
+                           if (flag) { span.addClass('flag-icon'); }
+                           else { span.removeClass('flag-icon'); }
+                     }, async:true
+              	});
+       		});                  
+       		$('#cm_section .flag:first').trigger('refresh');
+			});
+
+		
+		// Loads the first expandable section identified in the hash string
+		function loadNextHashSection() {
+			if (window_location_hash !== '') {
+				var anchors = window_location_hash.split('|');
+				if (anchors.length > 1) {
+					window_location_hash = window_location_hash.substring(window_location_hash.indexOf('|')+1, window_location_hash.length);
+				}
+				else {
+					window_location_hash = '';
+				}
+				
+				$("#"+anchors[0]+" > .collapsible-header").trigger('header:expand');
+			}
+		}
+		
+		function returnToTop(elem) {
+			var header = $(elem).parents('.collapsible').first().find('.collapsible-header');
+			$('html,body').animate({scrollTop: header.offset().top});
+		}
+		
+		// A callback function triggered whenever a collapsible section is expanded.
+		//   This method registers the section as the "lastAccessed"
+		function onAfterExpand() {
+			setLastAccessed(this);
+			
+		 	$(this).next().off('click');
+		 	$(this).next().on('click', function(event) { event.stopPropagation(); setLastAccessed(this); });
+		 	
+			// Re-enable the Collapse All links
+			$('a.collapseAll').removeClass('disabled');
+			
+			loadNextHashSection();
+		}
+		
+		// A callback function triggered whenever a collapsible section is collapsed.
+		//   This method deregisters the section as the "lastAccessed" and collapses all child sections
+		function onAfterCollapse() {
+			// clear lastAccessed 
+			lastAccessed = "_";
+			
+			collapseSubSections($(this));
+			
+			// Disable the Collapse All links if all sections are collapsed.
+			if ($('.collapsible .collapsible-header').filter(function() {return $(this).data('state') == 'expanded';}).length == 0) {				
+				$('a.collapseAll').addClass('disabled');
+			}
+		}
+		
+		function collapseSubSections(header) {
+			// collapse all child sections
+			header.next().find('.collapsible-header').each(function() {
+				$(this).trigger('header:collapse');
+			});
+		}
+		
+		// register onbeforeunload event to save screen before we leave the page.
+		$(window).bind('beforeunload', function() {
+			// save screen state
+			$("#lastAccessed").val(lastAccessed);
+			$("#submitAction").val("saveState");
+			var form = $("#ocpForm");
+			$.post(form[0].action, form.serialize());	
+		});
+		
+		// Override global function - reimplement without global variables.
+		// Check all isDirty variables on all forms, not just one variable on one form.
+		function checkFormChanged() {
+			var isDirty = false;
+			$("input[name='isDirty']").each(function() {
+				if (this.value === 'true') isDirty = true;
+			});
+			if (isDirty) {
+				return window.confirm(getIsDirtyConfirmMessage()); 
+			}
+			return true;
+		}
+	
+		var form_submitting = false;	
+		function ajaxPost(inputElem) {
+		
+			if (form_submitting) return false;
+				form_submitting = true; 
+				
+			// identify the form containing this input element 
+			var form = $(inputElem).closest("form");
+			var data = form.serialize();
+			data = data + "&" + inputElem.name + "=" + inputElem.value;
+
+			// disable buttons within this form
+			form.find("input[type='button']").attr('disabled', 'disabled');
+
+			$.ajax({
+				type : "POST",
+				url : form[0].action,
+				data : data,
+				success : function(result) {
+					// replace section content with results
+					var content = form.closest("div[data-url]");
+					content.empty().append(result);
+					
+					form_submitting = false;
+				}
+			});
+			return false;
+		}
+		
+		// Sets the last accessed section and subsection in a | separated list.
+		function setLastAccessed(elem) {
+			lastAccessed = '';
+			$(elem).parents('.collapsible').each(function () {
+				lastAccessed = $(this).attr('id')+'|'+lastAccessed;
+			});
+			// remove last |
+			lastAccessed = lastAccessed.substring(0, lastAccessed.length-1);
+		}
+
+		//]]>
+		</script>
+
+		<style type="text/css">			
+		.collapsible-header span {
+			font-size: 8pt;
+			color: gray;
+			font-weight: normal;
+		}
+			
+		a.returnToTop {
+			float: right;
+		}
+		
+		.collapseAll {
+			float: right;
+			font-size: 8pt;
+		}
+		fieldset {
+			padding: 0px;
+		}
+		.main-right-header .cls-link, .main-right-header .cls-link.disabled {
+			font-size: 8pt;
+			font-weight: normal;
+		}
+		table td, table th {
+			vertical-align: top;
+			white-space: nowrap;
+		}
+		table#co_contactsOverride td, table#co_contactsOverride th {
+			vertical-align: top;
+			white-space: normal;
+		}
+		.flag {
+			background-position: left center;
+		    background-repeat: no-repeat;
+		    float: right;
+		    height: 15px;
+		    width: 15px;
+		    padding-right: 5px;
+		}
+		.flag-icon {
+			background-image: url("/OMNIStatic/images/icons/red-flag.gif");
+		}
+		.main-right-header-overview-expanded:hover, .main-right-header-overview-collapsed:hover{
+			background-color: #B8B885;
+		}
+		a.cls-link.disabled {
+			color: gray;
+			cursor: default;
+		}
+		a.cls-link.disabled:hover {
+			color: gray;
+			text-decoration: underline;
+		}
+		input[type='submit'][disabled] {
+		    color: graytext;
+		}
+		textarea[readonly]{
+			background-color: #d4d0c8;
+		}
+		
+		table#cn_addCntcTbl td {
+			padding-right: 10px;
+		}
+		
+		#cm_ng_ac_form .pickList_list {
+			height: 55px;
+			width: 230px;
+		}
+		#cm_ng_ac_form .pickList_controlsContainer {
+			margin-top: 25px;
+		}
+		#cm_ng_ac_form .pickList_controlsContainer button {
+			height: 25px;
+		}
+		#cm_ng_asmntDmns.displayTag > tbody > tr > td {
+			vertical-align: middle;
+			background-color: #DEDE8B;
+		}
+		#cm_ng_asmntDmns.displayTag > thead > tr > th {
+			background-color: #B8B885;
+		}
+		.spinner-icon2 {
+			background-image: url("/OMNIStatic/images/icons/wait-dede8b.gif");
+			background-size: 16px;
+			background-repeat: no-repeat;
+			padding: 5px 12px 0px 8px;
+		}
+		#cm_ng_ad_fs fieldset {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		
+		.domainNeedLvlTbl { margin: auto; border-collapse: collapse; }
+		.domainNeedLvlTbl th, .domainNeedLvlTbl td:first-child { border: thin solid black; padding: 5px; text-align: center; font-weight: bold; }
+		.domainNeedLvlTbl td { border: thin solid grey; padding: 5px; text-align: center; }
+		
+		#cm_ng_ad_form select:disabled {
+			color: #666666;
+			background-color: #D4D0C8;
+		}
+		
+		#cm_ng_pp_entity_fs table td {
+			padding: 2px;
+		}
+		</style>
+		
+		
+		<!-- Page-specific head content: END -->
+
+	</head>
+	<!-- Header portion: END -->
+
+	<!-- Body portion: BEGIN-->
+	
+	<body> 
+	
+
+		<!-- Header content pane: BEGIN -->
+		<div id="id-main-header">
+
+			<!-- Application header: BEGIN -->
+			
+<!-- Header / Global: BEGIN -->
+
+	<!-- Global header images: BEGIN -->
+	<div id="id-main-header-a-1">
+		<img src="/OMNIStatic/images/logo-doc.gif" alt="Department Of Corrections logo" width="161" height="38" />
+	</div>
+	
+	
+	
+		
+		<div id="id-main-header-a-2">
+		******TEST-CONV******<br/>
+			<img src="/OMNIStatic/images/logo-omni.gif" alt="Offender Management Network Information logo" width="316" height="25" />
+		</div>
+		
+		
+	
+	<!-- Global header images: END -->
+
+	<script type="text/javascript">
+	//<![CDATA[
+	//  function for suppressing form submission if enter is pressed
+	//  when cursor in a input type="text"
+          function killEnterAfterFirst(evt)
+          {
+             if(evt.keyCode == 13 || evt.which == 13){
+          		//OMNI00016279 GLOBAL - Entering a DOC Number in the DOCNO box and hitting ENTER Bypasses Screen Warning
+          		if(!hasFormChanged(currentOmniForm)) {
+	          		return true;
+          		} else {
+          			if(checkFormChanged()) {
+						disableSubmitButtons('docNumberSearchForm');
+						document.forms['docNumberSearchForm'].submit();
+						document.getElementById('doc_no').setAttribute("disabled","disabled");
+		                return true;
+					} else {
+			      		return false;
+          			}
+          		}
+           	}
+            return true;
+          }
+          function disableSubmitButton(formName) {
+        	var elem = null;
+        	document.forms['docNumberSearchForm'].submit();
+                document.getElementById('doc_no').setAttribute("disabled","disabled");
+
+                for ( j=0;j< document.forms[formName].elements.length; j++ ) {
+                    	elem = document.forms[formName].elements[j];
+
+                        if(elem.type && (elem.type == 'submit' || elem.type == 'reset' || elem.type == 'button')) {
+	    	                elem.onclick = voidAction;
+	    	                elem.style.color='#cccc99';
+	                }
+	        }
+          }
+
+          function onSubmitHandler() {
+
+          	if(!hasFormChanged(currentOmniForm)) {
+
+          		return true;
+          	} else {
+          		if(checkFormChanged()) {
+          		      disableSubmitButtons('docNumberSearchForm',false);
+			      return true;
+			} else {
+			      return false;
+          		}
+          	}
+
+          }
+	//]]>
+	</script>
+	<!-- Global DOC number: BEGIN -->
+	
+	
+	<div id="id-main-header-a-3">
+		<form id="docNumberSearchForm" method="post" action="/omni/common/docNumberSearch.htm" onsubmit="return onSubmitHandler();">
+			<table class="cls-doc-quick-jump">
+				<tr>
+					<td class="cls-nowrap">
+						<label class="form-element" for="doc_no"> DOC No.:</label>
+						<!-- fix for CQ14900 - add tab index to the doc number box -->
+						<input class="form-element" name="docSearchNumber" type="text" id="doc_no" tabindex="1" size="12" maxlength="7"  onkeypress="return killEnterAfterFirst(event);" style="text-align:right" value="888912" />
+						<input class="form-element" name="go" id="go" type="submit" value="Go"  tabindex="2"/><!-- Fix for 9746 -->
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<!-- Global DOC number: END -->
+
+
+<!-- Global selected DOC: BEGIN -->
+
+	
+	<div id="id-main-header-b-2">
+		
+			
+				
+					
+						<div id="selectedDocNo">
+						Selected DOC No.:  888912 TABLER, Patrick Roy
+						</div>
+					
+					
+				
+			
+			
+		
+		
+	</div>
+
+<!-- Global selected DOC: END -->
+
+
+	<!-- Global top tabs: BEGIN -->
+
+	<!-- Menu tooltips: BEGIN -->
+	<div id="id-tooltip-offender">Single offender specific information regarding their overall case plan.</div>
+	<div id="id-tooltip-assignments">View and work with caseload specific, Notifications and Check Dates. Create a Group Chrono.</div>
+	<div id="id-tooltip-facility">Facility maintenance functions.</div>
+	<div id="id-tooltip-search">Search for offenders by name or other search criteria. Search Chronos, Check Dates, and Notifications. Locate staff / position and facility information.</div>
+	<div id="id-tooltip-administration">Create and maintain staff and position information. Create and maintain facility information. Maintain code tables and security authorizations.</div>
+	<div id="id-tooltip-plans">Manage the offender's plans.</div>
+	<div id="id-tooltip-healthServices">View and work with health services for offenders.</div>
+	<div id="id-tooltip-programs">Manage the offender's programs.</div>
+	<!-- Menu tooltips: END -->
+
+	<!-- Menu tabs: BEGIN -->
+	<div id="id-main-header-b-1">
+		
+		<a href="/omni/index.jsp" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-home','','show')" onmouseout="MM_showHideLayers('id-tooltip-home','','hide')">Home</a>
+		
+		
+			<a href="/omni/assignments/index.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-assignments','','show')" onmouseout="MM_showHideLayers('id-tooltip-assignments','','hide')">Assignments</a>
+		
+		
+		
+			<a href="/omni/advcor/csPln/offenderCasePlan.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs-on" onmouseover="MM_showHideLayers('id-tooltip-offender','','show')" onmouseout="MM_showHideLayers('id-tooltip-offender','','hide')">Offender</a>
+		
+		
+		
+			
+			
+				
+			
+			
+			
+				
+			
+			
+				
+				
+					<a href="/omni/med/sched/schedulerQueue.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-healthServices','','show')" onmouseout="MM_showHideLayers('id-tooltip-healthServices','','hide')">Health Services</a>
+				
+				
+			
+		
+		
+		
+			
+				<a href="/omni/menu/plans.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-plans','','show')" onmouseout="MM_showHideLayers('id-tooltip-plans','','hide')">Plans</a>
+			
+		
+		
+		
+			
+				<a href="/omni/menu/programs.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-programs','','show')" onmouseout="MM_showHideLayers('id-tooltip-programs','','hide')">Programs</a>
+			
+		
+		
+		<!-- For CQ# 15120 create new authority -->
+		
+			<a href="/omni/records/facility/facilityModifyDeleteField.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-facility','','show')" onmouseout="MM_showHideLayers('id-tooltip-facility','','hide')">Facility</a>
+		
+		
+		
+			<a href="/omni/records/offender/offenderSearchQuick.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-search','','show')" onmouseout="MM_showHideLayers('id-tooltip-search','','hide')">Search</a>
+		
+		
+		
+			<a href="/omni/menu/prea.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-prea','','show')" onmouseout="MM_showHideLayers('id-tooltip-prea','','hide')">PREA</a>
+		
+		
+		<a href="/omni/menu/administration.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-administration','','show')" onmouseout="MM_showHideLayers('id-tooltip-administration','','hide')">Administration</a>
+	</div>
+	<!-- Menu tabs: END -->
+
+	<!-- Global top tabs: END -->
+
+
+<!-- Header / Global: END -->
+
+			<!-- Application header: END -->
+
+			<!-- Breadcrumb trail area: BEGIN -->
+			<div id="id-main-header-c-1">&nbsp;</div>
+			<div id="id-main-header-d-1">
+			
+			<div id="breadCrumb"><a href="/omni/index.jsp" class="cls-link" onclick="return checkFormChanged();">Home</a> &gt; Offender</div>
+			
+			</div>
+			<!-- Breadcrumb trail area: END -->
+
+			<!-- Most recent search & logged-in user area: BEGIN -->
+			
+			<div id="id-main-header-d-2">
+				
+
+	<!-- Global user menu: END -->
+	
+	
+	
+	
+	
+		<a href="http://helpsitesdemo/omni/" class="cls-link-help" rel="external" onclick="window.open(this.href, 'HelpWindow'); return false;"  onkeypress="window.open(this.href); return false;">Help</a>
+	
+	&nbsp;
+	<span id="id-logged-in">Logged in as <strong>Nathan Franco</strong></span>
+	<!-- Global user menu: END -->
+
+			</div>
+			
+			<!-- Most recent search & logged-in user area: END -->
+
+		</div>
+		<!-- Header content pane: END -->
+
+		<!-- Left content pane: BEGIN -->
+		
+		<div id="menu-block-expanded" style="display:inline; margin:5px; position:absolute; left:155px; top:100px; z-index:1;">
+		<a href="" onclick="hideElement('id-main-left');hideElement('menu-block-expanded');showElement('menu-block-collapsed');resetMarginLeft('id-main-right', '25px');return(false);" >
+		<img style="border-width: 0px;" 
+		      height="15" alt="Hide Menu" 
+		      src="/OMNIStatic/images/buttons/button-minus.gif" /></a>
+		</div>
+		<div id="menu-block-collapsed" style="display:none; margin:5px; position:absolute; left:0px; top:100px; z-index:1;">
+		<a href="" onclick="showElement('id-main-left');showElement('menu-block-expanded');hideElement('menu-block-collapsed');resetMarginLeft('id-main-right', '190px');return(false);" >
+		<img style="border-width: 0px;" 
+		      height="15" alt="Show Menu" 
+		      src="/OMNIStatic/images/buttons/button-plus.gif" /></a>
+		</div>		
+		
+		<div id="id-main-left">
+			
+
+
+
+
+
+
+
+<!-- Left / Menu / Offender: BEGIN -->
+<ul class="cls-menu-left">
+	<li class="cls-menu-left-header">Offender Menu</li>
+	
+		
+			<li><a href="/omni/records/offender/inmateStatus/inmateStatus.htm" onclick="return processOmniLinkClick(this);">General Status</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/records/offender/personalCharacteristics/offenderSummary.htm" onclick="return processOmniLinkClick(this);">Personal Characteristics</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/records/offender/registerOffender/registerOffender.htm" onclick="return processOmniLinkClick(this);">Register Offender</a></li>
+		
+	
+	
+		
+			
+				<li><a href="/omni/ssta/viewJSPrison.htm" onclick="return processOmniLinkClick(this);">Sentence Information</a></li>
+			
+		
+	
+	
+		
+			<li><a href="/omni/records/offender/releaseNotificationStatus/releaseNotification.htm" onclick="return processOmniLinkClick(this);">Release Notification Status</a></li>
+		
+	
+	
+		
+			
+				<li><a href="/omni/vw/createVwNotification.htm" onclick="return processOmniLinkClick(this);">Victim/Witness Notification</a></li>
+			
+		
+	
+	
+		<li><a href="/omni/detainee/viewWarrants.htm" onclick="return processOmniLinkClick(this);">Warrant Detainer Status</a></li>
+	
+	
+		
+			<li><a href="/omni/grievance/viewGrievanceStatusList.htm" onclick="return processOmniLinkClick(this);">Grievance</a></li>
+		
+	
+	<li class="cls-menu-left-inactive">
+		<hr />
+	</li>
+	
+		
+			<li><a href="/omni/records/offender/index.htm" onclick="return processOmniLinkClick(this);">Chronological Events / Notifications / Checkdates</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/advcor/bhvr/behaviorObservationSummary.htm" onclick="return processOmniLinkClick(this);">Behavior Observation</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cmfm/supervisionActivityRecord.htm" onclick="return processOmniLinkClick(this);">Supervision Activities</a></li>
+		
+	
+	
+		
+			
+				<li><a href="/omni/fieldhearings/createHearing.htm" onclick="return processOmniLinkClick(this);">Create Hearing</a></li>
+			
+		
+	
+	
+		
+			<li><a href="/omni/fd/viewViolationSummary.htm" onclick="return processOmniLinkClick(this);">Field Discipline</a></li>
+		
+	
+	
+		
+			
+				<li><a href="/omni/isrb/viewIsrbActionsList.htm" onclick="return processOmniLinkClick(this);">ISRB Actions</a></li>
+			
+	
+	
+
+	
+	
+			
+			        
+				<li><a href="/omni/vip/violatorSummary.htm" onclick="return processOmniLinkClick(this);">Violator Management</a></li>
+				    
+		 	
+	  
+	
+	<li class="cls-menu-left-inactive"> 
+		<hr />
+	</li>
+	
+		
+			<li><a href="/omni/pmbcm/bedAssign.htm" onclick="return processOmniLinkClick(this);">Assign Bed &amp; Counselor</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/pd/viewInfractionSummary.htm" onclick="return processOmniLinkClick(this);">Prison Discipline</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/pmbcm/extmv/externalMovements.htm" onclick="return processOmniLinkClick(this);">Prison Movements</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/menu/offender-screeningRestriction.htm" onclick="return processOmniLinkClick(this);">Screening &amp; Restriction</a></li>
+		
+	
+	
+	
+		
+			<li><a href="/omni/stg/stgOffenderInfo.htm" onclick="return processOmniLinkClick(this);">Security Threat Group</a></li>
+		
+	
+	
+
+	
+	
+		
+			<li><a href="/omni/segman/viewSegmanAuthSummary.htm" onclick="return processOmniLinkClick(this);">Segregation Management</a></li>
+		
+	
+	
+
+	
+		
+			<li><a href="/omni/pmbcm/transfer/transferOrderSummary.htm" onclick="return processOmniLinkClick(this);">Transfer Orders</a></li>
+		
+	
+	
+		
+			
+				
+					<li><a href="/omni/vw/createVictimWitness.htm" onclick="return processOmniLinkClick(this);">Victim/Witness</a></li>
+				
+				
+			
+		
+	
+	
+		
+			<li><a href="/omni/cos/cosLfoInformation.htm" onclick="return processOmniLinkClick(this);">COS/LFO Information</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cos/cosTransactions.htm" onclick="return processOmniLinkClick(this);">COS Transactions</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cos/cosPaymentAdjustments.htm" onclick="return processOmniLinkClick(this);">COS Payment Adjustments</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cos/cosSuspenseAdjustment.htm" onclick="return processOmniLinkClick(this);">COS Suspense Adjustment</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cos/interstateApplicationTransaction.htm" onclick="return processOmniLinkClick(this);">Interstate Application Transaction</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/cos/viewInterstateApplicationTransaction.htm" onclick="return processOmniLinkClick(this);">View Interstate Application Transaction</a></li>
+		
+	
+	
+		
+			<li><a href="/omni/dat/viewDAT.htm" onclick="return processOmniLinkClick(this);">Drug/Alcohol Tests</a></li>
+		
+	
+	<li class="cls-menu-left-inactive">
+		<hr />
+	</li>
+	
+		
+			<li><a href="/omni/ssta/reports/offenderReports.htm" onclick="return processOmniLinkClick(this);">Offender Reports</a></li>
+		
+	
+</ul>
+	
+	<!-- Left Link Menu Start -->
+	
+	<ul class="cls-menu-left">
+		<li class="cls-menu-left-header">Links</li>
+		<li><a target="_new" class=".cls-link" href="https://OnBaseQUAL/AppNet/docpop/docpop.aspx?clienttype=html&cqid=102&KT102_0_0_0=888912">OnBase</a></li>
+		<li><a target="_new" class=".cls-link" href="http://ceconnectconv/cefield/">CeField</a></li>
+
+		<li><a target="_new" class=".cls-link" href="http://ceprisonconv/">CePrison</a></li>
+
+		
+		<li><a target="_new" class=".cls-link" rel="external" href="http://insidedoc/policies/">Policies</a></li>
+		<li><a target="_new" class=".cls-link" href="http://reportwizardtest/Pages/Menu.aspx">Report Wizard</a></li>
+	</ul>
+<!-- Left / Menu / Offender: END -->
+
+
+			
+<!-- Left / Offender Information: BEGIN -->
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+	<div id="id-menu-left-header">
+		Personal Characteristics
+	</div>
+	<div id="id-menu-left">
+		<table border="0" cellpadding="2" cellspacing="0" width="100%">
+			<tr><td colspan="2" class="cls-label" style="vertical-align:top;" width="60px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Name
+</span></td></tr>
+			<tr>
+				<td colspan="2" class="cls-value" style="vertical-align:top; white-space: normal; padding-bottom: 5px;">
+				
+				TABLER,
+				Patrick
+				Roy
+						
+				
+					
+				</td>
+			</tr>
+			
+			<tr><td colspan="2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Address
+</span></td></tr>
+			<tr>
+				<td colspan="2" style="padding-bottom: 5px;">
+				<!-- CQ 32761 -->
+					917 FRUITVALE BLVD #25        <br/>
+					
+					Yakima&nbsp;WA<br/>
+					United States<br/>
+					98902
+				</td>
+			</tr>
+			<tr><td colspan="2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Phone Number
+</span></td></tr>
+			<tr><td colspan="2" style="padding-bottom: 5px;">(509) 452-5952</td></tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	SSN
+</span></td>
+				<td class="cls-value" style="vertical-align:top;white-space: normal;">
+				
+				508-17-2720
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	DOC Number
+</span></td>
+				<td class="cls-value" style="vertical-align:top;">888912</td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	FBI Number
+</span></td>
+				<td class="cls-value" style="vertical-align:top;white-space: normal;">39380KC6 </td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	WASID Number
+</span></td>
+				<td class="cls-value" style="vertical-align:top;white-space: normal;">WA22967137</td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	DOB
+</span></td>
+				
+				
+				
+				<td class="cls-value" style="vertical-align:top;white-space: normal;">December 8, 1986</td>
+				
+				
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Age
+</span></td>
+				<td class="cls-value" style="vertical-align:top;">31 yrs</td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Race
+</span></td>
+				
+				
+				
+					<td class="cls-value" style="vertical-align:top;white-space: normal;">White</td>
+				
+			    
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Height
+</span></td>
+				<td class="cls-value" style="vertical-align:top;">6 ft. 2 In.</td>
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Weight
+</span></td>
+				<td class="cls-value" style="vertical-align:top;">196 lbs</td>
+			</tr>
+			<tr>
+
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Eye Color
+</span></td>
+				
+				
+				
+					<td class="cls-value" style="vertical-align:top;">Brown</td>
+				
+				
+
+			</tr>
+			<tr>
+				<td class="cls-label" style="vertical-align:top;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+
+
+
+<span  class="cls-label" >
+	
+	Hair Color
+</span></td>
+				
+					
+					
+						<td class="cls-value" style="vertical-align:top;">Brown</td>
+					
+				
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+
+<!-- Left / Offender Information: END -->
+		</div>
+		
+		<!-- Left content pane: END -->
+
+		<!-- Right content pane: BEGIN -->
+		<div id="id-main-right">
+
+			<!-- Autosave message area: BEGIN -->
+			
+			
+			
+			<!-- Autosave message area: END -->
+
+			<!-- Alert message area: BEGIN -->
+			
+			
+			
+			<!-- Alert message area: END -->
+
+			<!-- Main content area: BEGIN -->
+			
+			<!-- Main content goes here -->
+			<div style="min-width: 1045px;">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="hdr_offenderCPHeader">
+	<form id="hdr_form" action="" >
+		<input type="hidden" value="" name="persCallback"/>
+		<input type="hidden" value="true" name="persCheckIsDirty"/>
+		<input type="hidden" value="" name="inctvCallback"/>
+		<input type="hidden" value="true" name="inctvCheckIsDirty"/>
+		<input type="hidden" value="$('#sc_section').trigger('header:expand'); return false;" name="ccOnClick"/>
+		<input type="hidden" value="$('#sc_section').trigger('header:expand'); return false;" name="waOnClick"/>
+		<input type="hidden" value="$('#sc_section').trigger('header:expand'); return false;" name="scOnClick"/>
+		<input type="hidden" value="false" name="readOnly"/>
+		
+		<input type="hidden" value="" name="isPrint"/>
+		<input type="hidden" value="" name="nrtvHstryPage"/>
+	</form>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+	$.ajax({
+		url:'/omni/advcor/csPln/offenderCPHeader.htm', 
+		data:$("#hdr_form").serialize(),
+		async: false
+	}).done(function(html) {
+		$("#hdr_offenderCPHeader").empty().append(html);				
+	});
+	//]]>
+</script>
+
+			
+			<form id="ocpForm" action="offenderCasePlan.htm" method="post">
+				<input id="lastAccessed" name="lastAccessed" type="hidden" value=""/>
+				<input type="hidden" id="submitAction" name="submitAction" />
+			</form>
+			
+			<div id="mainCasePlanSection" style="display: none;">
+				
+				 
+				<a class="collapseAll disabled" style="display: ">Collapse All</a><br/>
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<div id="cm_section">
+	<h3 class="">Case Management<span class='flag'></span></h3>
+	<div class="main-contents" data-url="caseMgmt.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("cm_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: true
+   });
+});
+//]]>
+</script>
+
+				
+					
+					
+						
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="cn_section">
+	<h3 class="">Contacts</h3>
+	<div class="main-contents" data-url="../cntc/contacts.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("cn_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '<span style="display: inline-block; width:95%" id="cntcPrdRsltsSpan"></span>',
+      scrollToBanner: true,
+      cached: false
+   });
+});
+//]]>
+</script>
+				
+				
+					
+						
+							
+							
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ch_section">
+	<h3 class="">Criminal History</h3>
+	<div class="main-contents" data-url="../ccr/ccrHeaderBanner.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("ch_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: false
+   });
+});
+//]]>
+</script>
+					
+			
+				
+					
+					
+						
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<div id="as_section">
+	<h3 class="">Assessments</h3>
+	<div class="main-contents" data-url="../riskAssmnts/assessments.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("as_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: true
+   });
+});
+//]]>
+</script>
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<div id="sc_section">
+	<h3 class="">Safety Concerns<span class="flag "></span></h3>
+	<div class="main-contents" data-url="safetyConcerns.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("sc_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: true
+   });
+});
+//]]>
+</script>
+					
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<div id="bh_section">
+	<h3 class="">Behavior<span class="flag "></span></h3>
+	<div class="main-contents" data-url="behavior.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("bh_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: true
+   });
+});
+//]]>
+</script>
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+<div id="ct_section">
+	<h3 class="disabled">Custody/Transfers
+					
+						&nbsp;&nbsp;<span style="left:7%;">
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+<a href="/omni/cfp/index.htm" class="cls-link" onclick="if (hasDisabledClass(this)) return false; ">Custody Facility Plan</a>
+</span>
+					
+					
+						<span style="right:7%;position: absolute;">
+
+
+
+
+
+
+
+
+<!-- Set default options -->
+
+	
+
+
+<a href="/omni/vip/violatorSummary.htm" class="cls-link" onclick="if (hasDisabledClass(this)) return false; ">Violator Management</a>
+</span></h3>
+	<div class="main-contents"  ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("ct_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+        
+      
+      title2: '',
+      scrollToBanner: false,
+      cached: true
+   });
+});
+//]]>
+</script>
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+<div id="re_section">
+	<h3 class="disabled">Reentry</h3>
+	<div class="main-contents"  ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("re_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+        
+      
+      title2: '',
+      scrollToBanner: false,
+      cached: true
+   });
+});
+//]]>
+</script>
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+<div id="rp_section">
+	<h3 class="disabled">Reports</h3>
+	<div class="main-contents"  ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("rp_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+        
+      
+      title2: '',
+      scrollToBanner: false,
+      cached: true
+   });
+});
+//]]>
+</script>
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+<div id="ce_section">
+	<h3 class="disabled">Chronological Events</h3>
+	<div class="main-contents"  ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("ce_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+        
+      
+      title2: '',
+      scrollToBanner: false,
+      cached: true
+   });
+});
+//]]>
+</script>
+						
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sa_section">
+	<h3 class="">Supervisor Approvals</h3>
+	<div class="main-contents" data-url="supervisorApprovals.htm" ></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function($) { 
+   $("#" + esc("sa_section")).collapsible({ 
+      init: function() { $(this).find(".collapsible-header").data("state", "collapsed"); },
+        
+      afterExpand: onAfterExpand,  
+      afterCollapse: onAfterCollapse,
+      title2: '',
+      scrollToBanner: true,
+      cached: false
+   });
+});
+//]]>
+</script>
+				
+				<a class="collapseAll disabled">Collapse All</a><br/>
+			
+				<div style="height: 1000px;" />
+			</div>
+			</div>
+			
+			
+			
+			<!-- Main content area: END -->
+
+		</div>
+		<!-- Right content pane: END -->
+
+	</body>
+	<!-- Body portion: END -->
+
+</html>

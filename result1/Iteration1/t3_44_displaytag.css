@@ -1,0 +1,17 @@
+table.displayTag th.sorted span,th.sortable span {
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 12px;
+}		
+
+table.displayTag th.sortable span {
+	background-image: url('../images/icons/arrow_off.png');
+}	
+	
+table.displayTag th.order1 span {
+	background-image: url('../images/icons/arrow_up.png');
+}	
+	
+table.displayTag th.order2 span {
+	background-image: url('../images/icons/arrow_down.png');
+}

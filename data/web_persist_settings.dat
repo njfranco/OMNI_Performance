@@ -1,0 +1,12 @@
+[StartRecordingGMT]
+StartRecordingGMT_1=2018/08/14 19:15:40
+StartRecordingIsDst_1=1
+[UserHomePage]
+UserHomePage=http://idoc
+[User-Agent]
+User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+[Security]
+UsingPersistForAuthentication=1
+UserName_1_1=DOC1.WA.LCL\svcwautestuser01doc1
+Password_1_1=TestP@ss01
+Realm_1_1=omniconv:80

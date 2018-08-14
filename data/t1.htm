@@ -1,0 +1,603 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+	<!-- Header portion: BEGIN -->
+	<head>
+
+		<!-- Set the meta parameters for this page -->
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+
+		<!-- Include common JSP files for OMNI -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+				<!-- Global body style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-body-styles.css" />
+
+		<!-- Global error style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-error-styles.css" />
+
+		<!-- Global hyperlink style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-link-styles.css" />
+
+		<!-- Global layer style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-layer-styles.css" />
+
+		<!-- Global layout declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-layout-styles.css" />
+
+		<!-- Global menu style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-menu-styles.css" />
+
+		<!-- Global print style declarations -->
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/themes/omni/global-print-styles.css" media="print" />
+
+	
+		<!-- Common scripts used in OMNI -->
+		<script type="text/javascript" src="/OMNIStatic/scripts/common-scripts.js"></script>
+
+		<!-- Common deferred scripts used in OMNI -->
+        <script type="text/javascript" defer="defer" src="/OMNIStatic/scripts/common-deferred-scripts.js"></script>
+        
+        <!-- Common jquery scripts used in OMNI -->
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-extension-1.9.1.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-ui.js"></script>
+        <script type="text/javascript" src="/OMNIStatic/scripts/jquery/jquery-ui-extension.js"></script>
+		<link rel="stylesheet" type="text/css" href="/OMNIStatic/scripts/jquery/jquery-ui.css" />
+
+        <!-- dwr scripts used in OMNI -->
+        <script type="text/javascript" src="/omni/dwr/engine.js"></script>
+		<script type="text/javascript" src="/omni/dwr/util.js"></script>    
+		
+        <!-- Common session storage scripts used in OMNI -->
+        <script type="text/javascript" src="/OMNIStatic/scripts/common-session-storage.js"></script>
+        
+
+
+
+
+
+
+		<!-- $layername is set to "id-main-right" by default: override if neccessary -->
+		
+
+		<!-- Page-specific head content: BEGIN -->
+		
+		<title>OMNI: Home</title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+
+		
+
+		function externalLinks() { 
+			if (!document.getElementsByTagName) {
+				return;
+			}
+			var anchors = document.getElementsByTagName("a"); 
+			for (var i = 0; i < anchors.length; i++) {
+				var anchor = anchors[i];
+				if (anchor.getAttribute("href") && anchor.getAttribute("rel") == "external") {
+					anchor.target = "_blank";
+				}
+			}
+		}
+		
+		
+		function moveCursorToDocNo()
+		{
+			//set doc_no to empty since it might caried the cached doc number over from previous browser
+			//it only happens when user select File->New Window within current OMNN Screen.
+			if (sessionStorage.getItem("isNewBrowser") != null && sessionStorage.getItem("isNewBrowser") == "Y")
+			{
+				document.getElementById('doc_no').value = "";
+				document.getElementById('selectedDocNo').innerHTML = "Selected DOC No.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";				
+				sessionStorage.setItem("isNewBrowser", null);
+				
+			}
+			document.getElementById('doc_no').focus();
+			// Defect 16543
+			document.getElementById('doc_no').select();					
+		}
+
+
+		
+
+		window.onload = externalLinks;
+
+		// -->
+		</script>
+
+		
+		
+		<!-- Page-specific head content: END -->
+
+	</head>
+	<!-- Header portion: END -->
+
+	<!-- Body portion: BEGIN-->
+	
+	<body onload="moveCursorToDocNo();">
+	
+
+		<!-- Header content pane: BEGIN -->
+		<div id="id-main-header">
+
+			<!-- Application header: BEGIN -->
+			
+<!-- Header / Global: BEGIN -->
+
+	<!-- Global header images: BEGIN -->
+	<div id="id-main-header-a-1">
+		<img src="/OMNIStatic/images/logo-doc.gif" alt="Department Of Corrections logo" width="161" height="38" />
+	</div>
+	
+	
+	
+		
+		<div id="id-main-header-a-2">
+		******TEST-CONV******<br/>
+			<img src="/OMNIStatic/images/logo-omni.gif" alt="Offender Management Network Information logo" width="316" height="25" />
+		</div>
+		
+		
+	
+	<!-- Global header images: END -->
+
+	<script type="text/javascript">
+	//<![CDATA[
+	//  function for suppressing form submission if enter is pressed
+	//  when cursor in a input type="text"
+          function killEnterAfterFirst(evt)
+          {
+             if(evt.keyCode == 13 || evt.which == 13){
+          		//OMNI00016279 GLOBAL - Entering a DOC Number in the DOCNO box and hitting ENTER Bypasses Screen Warning
+          		if(!hasFormChanged(currentOmniForm)) {
+	          		return true;
+          		} else {
+          			if(checkFormChanged()) {
+						disableSubmitButtons('docNumberSearchForm');
+						document.forms['docNumberSearchForm'].submit();
+						document.getElementById('doc_no').setAttribute("disabled","disabled");
+		                return true;
+					} else {
+			      		return false;
+          			}
+          		}
+           	}
+            return true;
+          }
+          function disableSubmitButton(formName) {
+        	var elem = null;
+        	document.forms['docNumberSearchForm'].submit();
+                document.getElementById('doc_no').setAttribute("disabled","disabled");
+
+                for ( j=0;j< document.forms[formName].elements.length; j++ ) {
+                    	elem = document.forms[formName].elements[j];
+
+                        if(elem.type && (elem.type == 'submit' || elem.type == 'reset' || elem.type == 'button')) {
+	    	                elem.onclick = voidAction;
+	    	                elem.style.color='#cccc99';
+	                }
+	        }
+          }
+
+          function onSubmitHandler() {
+
+          	if(!hasFormChanged(currentOmniForm)) {
+
+          		return true;
+          	} else {
+          		if(checkFormChanged()) {
+          		      disableSubmitButtons('docNumberSearchForm',false);
+			      return true;
+			} else {
+			      return false;
+          		}
+          	}
+
+          }
+	//]]>
+	</script>
+	<!-- Global DOC number: BEGIN -->
+	
+	
+	<div id="id-main-header-a-3">
+		<form id="docNumberSearchForm" method="post" action="/omni/common/docNumberSearch.htm" onsubmit="return onSubmitHandler();">
+			<table class="cls-doc-quick-jump">
+				<tr>
+					<td class="cls-nowrap">
+						<label class="form-element" for="doc_no"> DOC No.:</label>
+						<!-- fix for CQ14900 - add tab index to the doc number box -->
+						<input class="form-element" name="docSearchNumber" type="text" id="doc_no" tabindex="1" size="12" maxlength="7"  onkeypress="return killEnterAfterFirst(event);" style="text-align:right" value="" />
+						<input class="form-element" name="go" id="go" type="submit" value="Go"  tabindex="2"/><!-- Fix for 9746 -->
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<!-- Global DOC number: END -->
+
+
+<!-- Global selected DOC: BEGIN -->
+
+	
+	<div id="id-main-header-b-2">
+		
+			
+				
+					
+					
+						<div id="selectedDocNo">Selected DOC No.:
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					
+				
+			
+			
+		
+		
+	</div>
+
+<!-- Global selected DOC: END -->
+
+
+	<!-- Global top tabs: BEGIN -->
+
+	<!-- Menu tooltips: BEGIN -->
+	<div id="id-tooltip-offender">Single offender specific information regarding their overall case plan.</div>
+	<div id="id-tooltip-assignments">View and work with caseload specific, Notifications and Check Dates. Create a Group Chrono.</div>
+	<div id="id-tooltip-facility">Facility maintenance functions.</div>
+	<div id="id-tooltip-search">Search for offenders by name or other search criteria. Search Chronos, Check Dates, and Notifications. Locate staff / position and facility information.</div>
+	<div id="id-tooltip-administration">Create and maintain staff and position information. Create and maintain facility information. Maintain code tables and security authorizations.</div>
+	<div id="id-tooltip-plans">Manage the offender's plans.</div>
+	<div id="id-tooltip-healthServices">View and work with health services for offenders.</div>
+	<div id="id-tooltip-programs">Manage the offender's programs.</div>
+	<!-- Menu tooltips: END -->
+
+	<!-- Menu tabs: BEGIN -->
+	<div id="id-main-header-b-1">
+		
+		<a href="/omni/index.jsp" onclick="return processOmniLinkClick(this);" class="cls-main-tabs-on" onmouseover="MM_showHideLayers('id-tooltip-home','','show')" onmouseout="MM_showHideLayers('id-tooltip-home','','hide')">Home</a>
+		
+		
+			<a href="/omni/assignments/index.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-assignments','','show')" onmouseout="MM_showHideLayers('id-tooltip-assignments','','hide')">Assignments</a>
+		
+		
+		
+			<a href="/omni/advcor/csPln/offenderCasePlan.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-offender','','show')" onmouseout="MM_showHideLayers('id-tooltip-offender','','hide')">Offender</a>
+		
+		
+		
+			
+			
+				
+			
+			
+			
+				
+			
+			
+				
+				
+					<a href="/omni/med/sched/schedulerQueue.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-healthServices','','show')" onmouseout="MM_showHideLayers('id-tooltip-healthServices','','hide')">Health Services</a>
+				
+				
+			
+		
+		
+		
+			
+				<a href="/omni/menu/plans.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-plans','','show')" onmouseout="MM_showHideLayers('id-tooltip-plans','','hide')">Plans</a>
+			
+		
+		
+		
+			
+				<a href="/omni/menu/programs.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-programs','','show')" onmouseout="MM_showHideLayers('id-tooltip-programs','','hide')">Programs</a>
+			
+		
+		
+		<!-- For CQ# 15120 create new authority -->
+		
+			<a href="/omni/records/facility/facilityModifyDeleteField.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-facility','','show')" onmouseout="MM_showHideLayers('id-tooltip-facility','','hide')">Facility</a>
+		
+		
+		
+			<a href="/omni/records/offender/offenderSearchQuick.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-search','','show')" onmouseout="MM_showHideLayers('id-tooltip-search','','hide')">Search</a>
+		
+		
+		
+			<a href="/omni/menu/prea.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-prea','','show')" onmouseout="MM_showHideLayers('id-tooltip-prea','','hide')">PREA</a>
+		
+		
+		<a href="/omni/menu/administration.htm" onclick="return processOmniLinkClick(this);" class="cls-main-tabs" onmouseover="MM_showHideLayers('id-tooltip-administration','','show')" onmouseout="MM_showHideLayers('id-tooltip-administration','','hide')">Administration</a>
+	</div>
+	<!-- Menu tabs: END -->
+
+	<!-- Global top tabs: END -->
+
+
+<!-- Header / Global: END -->
+
+			<!-- Application header: END -->
+
+			<!-- Breadcrumb trail area: BEGIN -->
+			<div id="id-main-header-c-1">&nbsp;</div>
+			<div id="id-main-header-d-1">
+				
+				
+				
+			</div>
+			<!-- Breadcrumb trail area: END -->
+
+			<!-- Most recent search & logged-in user area: BEGIN -->
+			
+			<div id="id-main-header-d-2">
+				
+
+	<!-- Global user menu: END -->
+	
+	
+	
+	
+	
+		<a href="http://helpsitesdemo/omni/" class="cls-link-help" rel="external" onclick="window.open(this.href, 'HelpWindow'); return false;"  onkeypress="window.open(this.href); return false;">Help</a>
+	
+	&nbsp;
+	<span id="id-logged-in">Logged in as <strong>Nathan Franco</strong></span>
+	<!-- Global user menu: END -->
+
+			</div>
+			
+			<!-- Most recent search & logged-in user area: END -->
+
+		</div>
+		<!-- Header content pane: END -->
+
+		<!-- Left content pane: BEGIN -->
+		
+		<div id="menu-block-expanded" style="display:inline; margin:5px; position:absolute; left:155px; top:100px; z-index:1;">
+		<a href="" onclick="hideElement('id-main-left');hideElement('menu-block-expanded');showElement('menu-block-collapsed');resetMarginLeft('id-main-right', '25px');return(false);" >
+		<img style="border-width: 0px;" 
+		      height="15" alt="Hide Menu" 
+		      src="/OMNIStatic/images/buttons/button-minus.gif" /></a>
+		</div>
+		<div id="menu-block-collapsed" style="display:none; margin:5px; position:absolute; left:0px; top:100px; z-index:1;">
+		<a href="" onclick="showElement('id-main-left');showElement('menu-block-expanded');hideElement('menu-block-collapsed');resetMarginLeft('id-main-right', '190px');return(false);" >
+		<img style="border-width: 0px;" 
+		      height="15" alt="Show Menu" 
+		      src="/OMNIStatic/images/buttons/button-plus.gif" /></a>
+		</div>		
+		
+		<div id="id-main-left">
+			<ul class="cls-menu-left">
+				<li class="cls-menu-left-header">Welcome to OMNI</li>
+			</ul>
+			
+<!-- Left / Menu / Home: BEGIN -->
+
+			
+			
+
+<ul class="cls-menu-left">
+	<li class="cls-menu-left-header">Links</li>
+	
+		<li><a target="_new" href="/omni/fors/index.htm" class="cls-link">FORS</a></li>
+	
+	
+		<li><a target="_new" href="http://idoc/" class="cls-link">iDOC</a></li>
+	
+	
+	<li><a target="_new" href="http://omnireportconv/OMNI_Reports/Pages/Folder.aspx">OMNI Reports</a></li>
+
+	<li><a target="_new" href="http://ceconnectconv/cefield/">CeField</a></li>
+
+	<li><a target="_new" href="http://ceprisonconv/">CePrison</a></li>		
+	
+	<li><a target="_new" href="http://reportwizardtest/Pages/Menu.aspx">Report Wizard</a></li>
+</ul>
+<!-- Left / Menu / Home: END -->
+
+				<!-- Left: User Information START -->
+	<div id="id-menu-left-header">
+		User Information
+	</div>
+	<div id="id-menu-left" style="overflow: hidden;">
+		
+
+<script language="javascript" type="text/javascript">
+
+
+function staffAddressBookCurrentUserCallBack(paramStaffName, paramStaffId, paramPositionId, paramOpeningId) {
+
+	if(paramStaffId != null) {
+	        refreshCurrentPage();
+	}
+}
+
+
+
+function showAddressBookForCurrentUser() {
+        showStaffAddressBook('/omni/common/dialogs/rolodex.htm', staffAddressBookCurrentUserCallBack, 'CHANGE_POSITION', '100006865', '100000462', '1');
+}
+</script>
+
+
+		<table border="0" cellpadding="2" cellspacing="0" >
+			<tr>
+				<td><span class="cls-label">
+					Name</span>
+				<br/>&nbsp;&nbsp;&nbsp;<span class="cls-value">
+				  <a href='/omni/records/staff/staffModify.htm?staffId=100006865' class='cls-link' onclick="return checkFormChanged();">
+					Franco, Nathan J
+				   </a></span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="cls-label">
+					Position Title</span>
+				<br/>&nbsp;&nbsp;&nbsp;<span class="cls-value">
+					Information Technology Specialist 5
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="cls-label">
+					Facility</span>
+				<br/>&nbsp;&nbsp;&nbsp;<span class="cls-value">
+					Headquarters
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="cls-label">
+					Telephone</span>
+				<br/><span class="cls-read-only">
+				        
+					        &nbsp;&nbsp;&nbsp;(360) 725-8750 (o)<br/>
+					
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="cls-label">E-Mail</span>
+					<!-- Defect 11054 - email will be displayed without text-transform:capitalize -->
+					<span class="cls-value" style="text-transform:none">
+						
+						
+						
+							<br/>
+							&nbsp;&nbsp;&nbsp;
+							
+								
+								
+									<a href="mailto:njfranco@doc1.wa.gov" title="njfranco@doc1.wa.gov">njfranco@doc1.wa.gov</a>
+								
+	      					
+						
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="cls-label">
+					OBTS Position Number</span>
+				<br/>&nbsp;&nbsp;&nbsp;<span class="cls-value">
+					CP78 
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="cls-value">
+					<form action="#" name="changePosition">
+						
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Left: User Information END -->
+
+		</div>
+		
+		<!-- Left content pane: END -->
+
+		<!-- Right content pane: BEGIN -->
+		<div id="id-main-right">
+
+			<!-- Autosave message area: BEGIN -->
+			
+			
+			
+			<!-- Autosave message area: END -->
+
+			<!-- Alert message area: BEGIN -->
+			
+			
+			
+			<!-- Alert message area: END -->
+
+			<!-- Main content area: BEGIN -->
+			
+			<div style="background-color: #ffffff;border:1px solid black;">
+				<center>
+					<br />
+					<br />
+					<strong>
+						Welcome to the State of Washington<br />
+						Authorized Use Only<br />
+						
+						For assistance please call your help desk.<br />
+						Phone: 360.725.8383 or 800.858.4416 <br/>
+						EasyVista Website: <a href="https://esp.doc.wa.gov" target="blank">https://esp.doc.wa.gov</a><br/>
+					</strong>
+					<br />
+					<br />
+				</center>
+			</div>
+			<br />
+
+			
+				<div class="main-right-header">
+					Policy
+				</div>
+				<div class="main-contents-overview">
+					
+					Policies can be viewed <a href="http://insidedoc/policies/" class="cls-link" rel="external">here</a>.
+				</div>
+				<div style="font-size: 6pt">&nbsp;</div>
+			
+
+			
+				<div class="main-right-header">
+					OMNI Help
+				</div>
+				<div class="main-contents-overview">
+										
+					Help can be viewed <a href="http://helpsitesdemo/omni/" class="cls-link" rel="external">here</a>.
+				</div>
+				<div style="font-size: 6pt">&nbsp;</div>
+			
+
+			
+				<div class="main-right-header">
+					System Bulletins
+				</div>
+				<div class="main-contents-overview">
+										
+					System bulletins can be viewed <a href="http://idoc/agency/services/it/app-info.htm#omni" class="cls-link" rel="external">here</a>.
+				</div>
+			
+
+			
+			<!-- Main content area: END -->
+
+		</div>
+		<!-- Right content pane: END -->
+
+	</body>
+	<!-- Body portion: END -->
+
+</html>
+

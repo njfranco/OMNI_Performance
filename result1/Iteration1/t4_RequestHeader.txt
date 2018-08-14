@@ -1,0 +1,11 @@
+GET /omni/advcor/csPln/offenderCPHeader.htm?persCallback=&persCheckIsDirty=true&inctvCallback=&inctvCheckIsDirty=true&ccOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&waOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&scOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&readOnly=false&isPrint=&nrtvHstryPage= HTTP/1.1
+Referer: http://omniconv/omni/advcor/csPln/offenderCasePlan.htm
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US
+Accept: */*
+Connection: Keep-Alive
+Host: omniconv
+Authorization: NTLM TlRMTVNTUAADAAAAGAAYAJwAAAAYABgAtAAAABYAFgBAAAAAKAAoAFYAAAAeAB4AfgAAAAAAAADMAAAABYKIokQATwBDADEALgBXAEEALgBMAEMATABzAHYAYwB3AGEAdQB0AGUAcwB0AHUAcwBlAHIAMAAxAGQAbwBjADEARABPAEMAMQBaAFQAVQBNADEAMQA2ADgANwA4ADEAxHhUBZK/sKIAAAAAAAAAAAAAAAAAAAAAfBw+8hevHgXpBISN6R5gIXk+scVcTWB8
+Cookie: JSESSIONID=0000WmXRq4wqnJtOAR_LH2Xsaux:-1
+

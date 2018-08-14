@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: text/javascript; charset=utf-8
+Content-Encoding: gzip
+Content-Language: en-US
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+Server: WebSphere Application Server/7.0
+Persistent-Auth: false
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARuAYZBp8fZQuF+SRXfSpxDnwve0Hs3Dd2rM5UypJuYlxT2zjTN8zn5FDtafgF6CtsGvZrq53dixa+HJiygRWa0v1EsbL2sjS5X0XX5dtgIL+Fi4kc0XS3By/rEFDjz5uEukPk12dUhlmua7glvU9c=
+Date: Tue, 14 Aug 2018 19:15:47 GMT
+

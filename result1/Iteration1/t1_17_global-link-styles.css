@@ -1,0 +1,115 @@
+<!--
+
+/* 
+
+	Date File Created: December (13) 2006
+	Created By: Paul Cormie
+	Date Last Modified: January (8) 2007
+	Last Modified By: Paul Cormie
+	File Summary: CSS classes used throughout the entire web application for Links
+	CSS Contents: Hyperlinks
+	Tested: IE 5.5, IE 6.0, FireFox 2.0
+	ADD float:left; TAdd 
+	float:left;
+	to 
+		a.cls-main-tabs	
+	and 
+	a.cls-main-tabs-on
+	FOr making IE 7 compatible to Issue with space between the menu tabs  
+
+*/
+
+a.cls-link			{
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-weight: normal;
+					text-decoration: underline;
+					color: blue;
+				}
+
+a.cls-link:hover		{
+					color: #00008A;
+					text-decoration: none;
+				}
+				
+a.cls-link:active		{
+					color: blue;
+				}
+	
+a.cls-main-tabs			{
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 3px;
+					padding-bottom: 3px;
+					background-image:url('../../images/menu-top/css-bg-off.jpg');
+					background-position:bottom right;
+					background-repeat:no-repeat;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 8pt;
+					color: #666666;
+					border-bottom: 1px solid #666666;
+					border-left: 1px solid #666666;
+					text-decoration: none;
+	
+				}
+				
+a.cls-main-tabs:hover		{
+					background-image:url('../../images/menu-top/css-bg-on.jpg');
+					background-position:bottom right;
+					background-repeat:no-repeat;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 8pt;
+					color: #000000;
+					border-bottom: 1px solid #cccc98;
+					border-left: 1px solid #666666;
+					text-decoration: none;
+				}
+
+a.cls-main-tabs-on			{
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 3px;
+					padding-bottom: 3px;
+					background-image:url('../../images/menu-top/css-bg-on.jpg');
+					background-position:bottom right;
+					background-repeat:no-repeat;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 8pt;
+					color: #000000;
+					border-bottom: 1px solid #cccc98;
+					border-left: 1px solid #666666;
+					text-decoration: none;
+	
+				}
+				
+/*  Slight work-around for hyperlink placement in header */
+
+a.cls-link-help			{
+					position: relative;
+					top:1px;
+					font-family: verdana, arial, helvetica, sans-serif;
+					font-size: 7pt;
+					font-weight: normal;
+					text-decoration: underline;
+					color: blue;
+				}
+
+a.cls-link-help:hover		{
+					color: #00008A;
+				}
+				
+a.cls-link-help:active		{
+					color: blue;
+				}
+				
+a { 
+	cursor: pointer; 
+}
+a.cls-link.disabled {
+	color: gray;
+	cursor: default;
+}
+a.cls-link.disabled:hover {
+	color: gray;
+	text-decoration: underline;
+}
+-->

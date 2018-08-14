@@ -1,0 +1,362 @@
+<!--
+
+/*
+
+	Date File Created: November (20)  2006
+	Created By: Paul Cormie
+	Date Last Modified: January (31) 2008
+	Last Modified By: Carol Carpenter
+	File Summary: CSS classes used throughout the entire web application
+	CSS Contents: Global Classes
+	Tested: IE 5.5, IE 6.0, FireFox 2.0
+
+*/
+
+#id-main-right-header-error, .main-right-header-error {
+	background-color: #aa0000;
+	color: #ffffff;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:10pt;  /*change to small to allow scaling*/
+	font-weight:bold;
+	padding-left:8px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom: 1px solid #000000;
+	/* these two margins affect IE 5.5 */
+	margin-right:0px;
+	top:95px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	/* these two margins affect IE 6 */
+	margin-right:0px;
+}
+
+#id-main-contents-error, .main-contents-error, #id-main_dwr_error_area {
+	color: #000000;
+	background-color: #ededcf;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-top:4px;
+	line-height:150%;
+	padding-bottom:5px;
+}
+
+#id-main-right-err-msg {
+	border-bottom: 1px solid #cccc99;
+	border-top: 1px solid #cccc99;
+	border-right: 1px solid #cccc99;
+	border-left: 1px solid #cccc99;
+	color: #990000;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 8pt;  /*change to x-small to allow scaling*/
+	font-weight: normal;
+	background-color: #ffffea;
+	padding: 5px;
+}
+
+.form-element-error {
+	/* CQ 28313 */
+	outline:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+}
+
+.form-element-10-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:10px;
+}
+
+.form-element-20-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:20px;
+}
+
+.form-element-30-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:30px;
+}
+
+.form-element-45-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:45px;
+}
+
+.form-element-60-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:60px;
+}
+
+.form-element-70-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:70px;
+}
+
+.form-element-75-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:75px;
+}
+
+.form-element-90-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:90px;
+}
+
+.form-element-105-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:105px;
+}
+
+.form-element-120-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:120px;
+}
+
+.form-element-135-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:135px;
+}
+
+.form-element-150-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:150px;
+}
+
+.form-element-180-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:180px;
+}
+
+.form-element-200-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:200px;
+}
+
+.form-element-210-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:210px;
+}
+
+.form-element-210-large-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:16pt;
+	color:#666666;
+	width:210px;
+}
+
+.form-element-220-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:220px;
+}
+
+.form-element-240-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:240px;
+}
+
+.form-element-270-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:270px;
+}
+
+.form-element-300-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:300px;
+}
+
+
+.form-element-320-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:320px;
+}
+
+.form-element-330-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:330px;
+}
+
+.form-element-370-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:370px;
+}
+
+.form-element-420-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:420px;
+}
+
+.form-element-500-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:500px;
+}
+
+.form-element-550-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:550px;
+}
+
+.form-element-600-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:600px;
+}
+
+.form-element-700-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:700px;
+}
+
+.form-element-770-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:770px;
+}
+
+.form-element-100Percent-error {
+	border:2px solid #aa0000;
+	background-color:#ffff00;
+	color:#666666;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:8pt;
+	width:98%;
+}
+
+#id-dwr-err-msg {
+	/* this style is identical to id-main-contents-error */
+        /* Used for distiguish main error versus dwr errors */
+	background-color: #aa0000;
+	color: #ffffff;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:10pt;  /*change to small to allow scaling*/
+	font-weight:bold;
+	padding-left:8px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom: 1px solid #000000;
+	/* these two margins affect IE 5.5 */
+	margin-right:0px;
+	top:95px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	/* these two margins affect IE 6 */
+	margin-right:0px;
+}
+
+-->

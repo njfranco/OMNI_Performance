@@ -1,0 +1,15 @@
+[t4]
+FileName1=t4.htm
+URL1=http://omniconv/omni/advcor/csPln/offenderCPHeader.htm?persCallback=&persCheckIsDirty=true&inctvCallback=&inctvCheckIsDirty=true&ccOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&waOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&scOnClick=%24('%23sc_section').trigger('header%3Aexpand')%3B+return+false%3B&readOnly=false&isPrint=&nrtvHstryPage=
+Total=3
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t4_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_4.xml
+FileName2=t4_question.png
+URL2=http://omniconv/OMNIStatic/images/icons/question.png
+FileName3=t4_wait.gif
+URL3=http://omniconv/OMNIStatic/images/icons/wait.gif
+[ProtocolInfo]
+ProtocolId=QTWeb

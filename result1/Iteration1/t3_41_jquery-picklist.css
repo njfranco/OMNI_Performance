@@ -1,0 +1,49 @@
+.pickList_addAll { background-image: url("/OMNIStatic/images/buttons/button-add-all-to-right.gif"); }
+.pickList_add {	background-image: url("/OMNIStatic/images/buttons/button-add-to-right.gif"); }
+.pickList_add:disabled { background-image: url("/OMNIStatic/images/buttons/button-add-to-right-disabled.png"); }
+.pickList_remove { background-image: url("/OMNIStatic/images/buttons/button-remove-from-right.gif"); }
+.pickList_remove:disabled { background-image: url("/OMNIStatic/images/buttons/button-remove-from-right-disabled.png"); }
+.pickList_removeAll { background-image: url("/OMNIStatic/images/buttons/button-remove-all-from-right.gif"); }
+
+.pickList_sourceListContainer, .pickList_controlsContainer, .pickList_targetListContainer { 
+	float: left; margin: 0.25em;
+}
+.pickList_controlsContainer { 
+	text-align: center; 
+	margin-top: 145px;
+}
+.pickList_controlsContainer button { 
+	display: block; width: 100%; text-align: center; 
+	width: 85px;
+	height: 34px;
+	border: none;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.pickList_list { 
+	list-style-type: none; margin: 0; padding: 0; 
+	float: left; 
+	width: 300px; 
+	height: 300px; 
+	border: 1px inset #eee; 
+	overflow-y: auto; 
+	cursor: default; 
+	color: #666666;
+	background: white;
+	outline: none;
+}
+.pickList_selectedListItem { 
+	background-color: #a3c8f5; 
+}
+.pickList_listLabel {
+	color: #666666;
+	text-align: center; 
+}
+.pickList_clear { 
+	clear: both; 
+}
+.pickList_list .ui-selectee { background: inherit; color: #666666; }
+.pickList_list .ui-selecting, .pickList_list .ui-selected { background: #a3c8f5; color: white; }
+.pickList_error { 
+	background-color: #ffff00; 
+}

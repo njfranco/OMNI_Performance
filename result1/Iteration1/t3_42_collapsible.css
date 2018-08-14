@@ -1,0 +1,57 @@
+
+.collapsible-header {
+	padding: 4px 5px;
+}
+
+.collapsible-header-icon, .collapsible-icon {
+	height: 15px;
+	width: 15px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	float: right;
+	cursor: pointer;
+}
+
+.collapsible-header-icon-minus, .collapsible-icon.expanded {
+	background-image: url('../images/buttons/button-minus-15pt.gif');
+}
+
+.collapsible-header-icon-plus, .collapsible-icon.collapsed {
+	background-image: url('../images/buttons/button-plus-15pt.gif');
+}
+
+.collapsible-header-hover {
+	background-color: #B8B885;
+}
+
+.collapsible h3.disabled {
+	background-color: #DEDAD2;
+}
+
+.collapsible-header-icon.disabled, 
+.collapsible-icon.expanded.disabled, 
+.collapsible-icon.collapsed.disabled {
+	background-image: url('../images/buttons/button-plus-gray.gif');
+	cursor: auto;
+}
+
+.collapsible .disabled .collapsible-header-icon-minus {
+	background-image: url('../images/buttons/button-minus-gray.gif');
+}
+
+.collapsible .disabled .collapsible-header-icon-plus {
+	background-image: url('../images/buttons/button-plus-gray.gif');
+}
+
+.collapsible-header-spinner {
+	float: right;
+	margin-right: 10px;
+}
+
+.collapsible-header.collapsed .collapsible-header-icon {
+	background-image: url('../images/buttons/button-plus-15pt.gif');
+}
+
+.collapsible-header.expanded .collapsible-header-icon {
+	background-image: url('../images/buttons/button-minus-15pt.gif');
+}

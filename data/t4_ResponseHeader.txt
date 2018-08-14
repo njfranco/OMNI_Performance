@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache,no-store
+Pragma: no-cache
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+Content-Encoding: gzip
+Content-Language: en-US
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+Server: WebSphere Application Server/7.0
+Persistent-Auth: false
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARueI8dtC389DGnkgWoE0E2GxbaLlRCXDdBogi3CLkFJdHq1o21v9nx+WTMjpr0VSdNczLab/SstQkxojtWfhtnnBMgWHRsh2bWSCeLScgzCT8Wc7kW5JsnvE5YGKshHghuoLDNdihZq19YMZFbeDA=
+Date: Tue, 14 Aug 2018 19:15:47 GMT
+

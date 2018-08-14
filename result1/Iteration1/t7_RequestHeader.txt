@@ -1,0 +1,13 @@
+POST /omni/advcor/csPln/persGoalNrtv.htm HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://omniconv/omni/advcor/csPln/offenderCasePlan.htm
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US
+Accept: */*
+Connection: Keep-Alive
+Host: omniconv
+Authorization: NTLM TlRMTVNTUAADAAAAGAAYAJwAAAAYABgAtAAAABYAFgBAAAAAKAAoAFYAAAAeAB4AfgAAAAAAAADMAAAABYKIokQATwBDADEALgBXAEEALgBMAEMATABzAHYAYwB3AGEAdQB0AGUAcwB0AHUAcwBlAHIAMAAxAGQAbwBjADEARABPAEMAMQBaAFQAVQBNADEAMQA2ADgANwA4ADEAx3QcBNwV2TMAAAAAAAAAAAAAAAAAAAAAisdoh7HohxDTIeRmJSFi1mqQWe7zmjPA
+Cookie: JSESSIONID=0000WmXRq4wqnJtOAR_LH2Xsaux:-1
+Content-Length: 38
+

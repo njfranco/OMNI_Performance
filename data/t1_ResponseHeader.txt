@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=UTF-8
+Content-Encoding: gzip
+Content-Language: en-US
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+Set-Cookie: JSESSIONID=0000RB5n8xbz4SM78VlY4AgAc9l:-1; Path=/
+Server: WebSphere Application Server/7.0
+Persistent-Auth: false
+X-Powered-By: ASP.NET
+WWW-Authenticate: Negotiate oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARu9V23sL4IqmQ2fYBsFqYK+hZGAX5HpNiDQ07T3rW1rg7sgrxK0M8xWF3xXUKYBngYUzqSHWP7kNCjP51ULIxhUjTgxF6yAJWraftPqYVC5zLZJUeKv+DCQbYcXpaX+8d8PCs7NhwjLGoboDEbEik=
+Date: Tue, 14 Aug 2018 19:15:42 GMT
+

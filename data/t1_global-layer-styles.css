@@ -1,0 +1,316 @@
+<!--
+
+/*
+
+	Date File Created: December (13) 2006
+	Created By: Paul Cormie
+	Date Last Modified: February (5) 2008
+	Last Modified By: Victor Chong
+	File Summary: CSS classes used throughout the entire web application for Layers
+	CSS Contents: Layers
+	Tested: IE 5.5,IE 6.0,FireFox 2.0
+
+*/
+
+#id-logged-in {
+	padding-left:10px;
+	padding-right:5px;
+	padding-top:3px;
+	padding-bottom:3px;
+	background-image:url('../../images/menu-top/logged-in-bg.jpg');
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;
+	color:#666666;
+}
+
+#id-main-right-msg-wrapper {
+	border-bottom:5px solid #ffffff;
+}
+
+#id-auto-save {
+	position:absolute;
+	left:-170px;
+	top:0px;
+	margin-right:5px;
+	background-color:#ffffea;
+	padding:50px;
+	border:1px solid #cccc99;
+	color:#990000;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	visibility:hidden;
+}
+
+#id-white-screen {
+	position:absolute;
+	left:-200px;
+	top:-100px;
+	width:1500px;
+	height:300px;
+	visibility:hidden;
+	font-size:x-large;
+	background-color:#ffffff;
+	filter:alpha(opacity=75);
+}
+
+#id-menu-left {
+	position:relative;
+	top:-10px;
+	width:169px;
+	margin:0px;
+	color:#000000;
+	background-color:#ededcf;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+#id-menu-left-header {
+	position:relative;
+	top:-10px;
+	width:170px;
+	margin:0px;
+	color:#000000;
+	background-color:#cccc99;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:10pt;
+	font-weight:bold;
+	padding-left:5px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom:1px solid #666666;
+}
+
+#id-main-contents, .main-contents {
+	color:#000000;
+	background-color:#ededcf;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-top:4px;
+	line-height:150%;
+	padding-bottom:5px;
+	word-wrap: break-word; 
+}
+
+#id-main-contents-overview, .main-contents-overview {
+	color:#000000;
+	background-color:#ededcf;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;  /*change to x-small to allow scaling*/
+	font-weight:normal;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-top:4px;
+	line-height:150%;
+	padding-bottom:5px;
+}
+
+#id-main-right-header-overview-collapsed, .main-right-header-overview-collapsed {
+	position:relative;
+	margin:0px;
+	color:#000000;
+	background-color:#cccc99;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:10pt;  /*change to small to allow scaling*/
+	font-weight:bold;
+	padding-left:5px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom:1px solid #666666;
+}
+
+#id-main-right-header-overview-expanded, .main-right-header-overview-expanded, .collapsible-header {
+	position:relative;
+	margin:0px;
+	color:#000000;
+	background-color:#cccc99;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:10pt;  /*change to small to allow scaling*/
+	font-weight:bold;
+	padding-left:5px;
+	padding-bottom:4px;
+	padding-top:4px;
+	border-bottom:1px solid #666666;
+}
+
+/* Note the background image is related to the number of lines in the layer */
+/* Available bg images:bubble-bg-1-line.gif to bubble-bg-6-line.gif  */
+
+#id-tooltip-assignments {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:95px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-3-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-offender {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:179px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-2-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-facility {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:247px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-1-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:40px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-search {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:309px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-5-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-plans {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:247px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-1-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-programs {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:247px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-1-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-administration {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:392px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-5-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:40px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+#id-tooltip-healthServices {
+	position:absolute;
+	width:180px;
+	height:85px;
+	z-index:100;
+	left:392px;
+	top:80px;
+	visibility:hidden;
+	background-image:url('../../images/menu-top/bubble-bg-2-line.gif');
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:22px;
+	padding-bottom:6px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+}
+
+.heightProp {
+    height:1px;
+  }
+
+
+-->

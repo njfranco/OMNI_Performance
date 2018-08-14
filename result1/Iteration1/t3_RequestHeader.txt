@@ -1,0 +1,13 @@
+POST /omni/common/docNumberSearch.htm HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://omniconv/omni/index.jsp
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US
+Accept: */*
+Connection: Keep-Alive
+Host: omniconv
+Authorization: NTLM TlRMTVNTUAADAAAAGAAYAJwAAAAYABgAtAAAABYAFgBAAAAAKAAoAFYAAAAeAB4AfgAAAAAAAADMAAAABYKIokQATwBDADEALgBXAEEALgBMAEMATABzAHYAYwB3AGEAdQB0AGUAcwB0AHUAcwBlAHIAMAAxAGQAbwBjADEARABPAEMAMQBaAFQAVQBNADEAMQA2ADgANwA4ADEAwXyMBkdoiBIAAAAAAAAAAAAAAAAAAAAAGsV0qGWeYEtc437qw8GNZt0oAkFNB3mG
+Cookie: JSESSIONID=0000WmXRq4wqnJtOAR_LH2Xsaux:-1
+Content-Length: 28
+

@@ -1,0 +1,23 @@
+<!--
+
+/*
+
+	Date File Created: March (7) 2007
+	Created By: Victor Chong
+	Date Last Modified: March (7) 2007
+	Last Modified By: Victor Chong
+	File Summary: CSS classes used throughout the entire web application specific to printed output
+	CSS Contents: "No print" tag
+	Tested: IE 6.0
+
+*/
+
+.noprint {
+	display: none;
+}
+
+.linksasblack a {
+	color: black;
+}
+
+-->
